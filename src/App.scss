@@ -1,3 +1,17 @@
-@import "./styles/main.scss"
+@import "./styles/main.scss";
 
+.category-card {
+    background: transparent !important;
+    box-shadow: none !important;
 
+    .category-title {
+        color:$tertiaryColor !important;
+        text-align: center;
+        font-size:$primaryFont !important;
+    }
+
+    .category-img {
+        border-radius: 0.8rem;
+        height: 220px;
+    }
+}
