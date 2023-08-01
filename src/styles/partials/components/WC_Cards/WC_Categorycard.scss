@@ -1,0 +1,21 @@
+.category_card {
+    background: transparent !important;
+    box-shadow: none !important;
+
+    .category_img {
+        border-radius: 0.8rem;
+        height: 220px;
+    }
+
+    .category_content {
+        padding-top: 5px !important;
+
+        .category_title {
+            color: $tertiaryColor !important;
+            text-align: center;
+            font-size: $primaryFont !important;
+        }
+    }
+
+
+}
