@@ -1,12 +1,13 @@
 import "./App.scss";
-import Homepage from "./pages/WC_Homepage";
+import WCCategoryCard from "./components/cards/categoryCard/categoryCard";
+import { books } from "./assets/Images";
 
 
 
 function App() {
   return (
     <>
-  <Homepage/>
+   <WCCategoryCard image={books} title="Books"/>
     </>
   );
 }
