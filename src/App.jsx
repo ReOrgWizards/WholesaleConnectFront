@@ -8,8 +8,9 @@ import WCTitle from "./components/TItle/TItle";
 function App() {
   return (
     <>
+     <WCTitle title="Category Section" />
    <WCCategoryCard image={books} title="Books"/>
-   <WCTitle title="Category Section" />
+  
     </>
   );
 }
