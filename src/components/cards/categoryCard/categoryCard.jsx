@@ -1,15 +1,17 @@
-import React from "react";
+import PropTypes from "prop-types";
 
-
-
-
-const WCCategoryCard = ({ image, title }) => (
+const WCCategoryCard = (props) => (
   <div className="category__card__container">
     <div className="category__card__img__container">
-      <img src={image} alt="category" />
+      <img src={props.image} alt="category" />
     </div>
-    <p>{title}</p>
+    <p>{props.title}</p>
   </div>
 );
+
+WCCategoryCard.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
 
 export default WCCategoryCard;
