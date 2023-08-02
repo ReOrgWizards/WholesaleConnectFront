@@ -2,6 +2,21 @@
   width: 300px;
   font-family: $font-family;
   cursor: pointer;
+  @mixin sm {
+    width: 300px;
+  }
+  @mixin md {
+    width: 300px;
+  }
+  @mixin lg {
+    width: 300px;
+  }
+  @mixin xlg {
+    width: 300px;
+  }
+  @mixin md {
+    width: 300px;
+  }
   .product__card__img__container {
     height: 300px;
     width: 300px;
@@ -18,31 +33,30 @@
       font-size: $primaryFont;
       color: $offWhiteColor;
       letter-spacing: $letter-spacing;
-      margin: 8px 0;
+      margin: $spacing-8 0;
     }
     .product__card__description {
       font-size: $primaryFont;
       color: $tertiaryColor;
       letter-spacing: $letter-spacing;
-      margin: 4px 0 6px;
+      margin: $spacing-4 0 $spacing-8;
       font-weight: $bold;
     }
-    .product__price__icon__container {
+    .product__card__content {
       display: flex;
       justify-content: space-between;
-      p {
+      .product__price__container{
         font-size: $secondaryFont;
         font-weight: $bold;
         color: $tertiaryColor;
-        margin: 5px 0;
+        margin: $spacing-4 0;
         span {
-          font-size: 13px;
+          font-size: $normalFont;
           color: $offWhiteColor;
         }
       }
-      .icon {
+      .price__icon__container {
         color: $primaryColor;
-        font-size: 12px;
         display: grid;
         grid-template-columns: auto auto;
         gap: 12px;

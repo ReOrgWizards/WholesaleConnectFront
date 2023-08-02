@@ -13,6 +13,7 @@ function App() {
         image={books}
         title="Cards & Plays"
         description="This is Card & Plays that every one must play."
+        price="1200 /-"
       />
     </>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import { CartIcon, FavoriteIcon } from "../../../assets/Icons";
-const WCProductCard = ({ image, title, description }) => {
+const WCProductCard = ({ image, title, description, price }) => {
   return (
     <>
       <div className="product__card__container">
@@ -10,19 +10,27 @@ const WCProductCard = ({ image, title, description }) => {
         <div className="product__card__content">
           <p className="product__card__title ">{title}</p>
           <p className="product__card__description">{description}</p>
-          <div className="product__price__icon__container">
-            <p>
-              <span>Rs. </span>1200/-
-            </p>
-            <p className="icon">
+          <div className="product__card__content">
+            <div className="product__price__container">
+              <span>Rs. </span>
+              {price}
+            </div>
+            <div className="price__icon__container">
               <CartIcon />
               <FavoriteIcon />
-            </p>
+            </div>
           </div>
         </div>
       </div>
     </>
   );
+};
+
+WCProductCard.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
 };
 
 export default WCProductCard;
