@@ -1,30 +1,27 @@
-@import '../../../abstracts/_abstract-dir';
-
+@import "../../../abstracts/_abstract-dir";
 
 .category__card__container {
-    cursor: pointer;
+  cursor: pointer;
+ 
+  .category__card__img__container {
+    text-align: $center;
+    justify-content: $center;
 
-    .category__card__img__container {
-        text-align: $center;
-        justify-content: $center;
-
-        img {
-            height: 200px;
-            width: 60%;
-            margin: $auto;
-            border-radius: $spacing-8;
-
-        }
+    img {
+      height: 200px;
+      width: 60%;
+      margin: $auto;
+      border-radius: $spacing-8;
     }
+  }
 
-    p {
-        margin-top: $spacing-8;
-        font-size: $primaryFont;
-        font-weight:$bold;
+  p {
+    margin-top: $spacing-8;
+    font-size: $primaryFont;
+    font-weight: $bold;
 
-        &:hover {
-            color: #407ED2;
-        }
+    &:hover {
+      color: #407ed2;
     }
-
+  }
 }

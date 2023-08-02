@@ -1,0 +1,14 @@
+.slider_container {
+  width: 1140px;
+  margin: $auto;
+  .slick-prev,
+  .slick-next {
+    background: $primaryColor  !important;
+    width: 25px !important;
+    height: 25px !important;
+    border-radius: 50% !important;
+  }
+  .slick-prev::before, .slick-next::before{
+    color:white !important;
+  }
+}
