@@ -1,0 +1,20 @@
+@import "../../abstracts/_abstract-dir";
+
+.title__container {
+  text-align: $center;
+  text-transform: uppercase;
+  padding: $spacing-32 0px;
+  p {
+    font-size: $secondaryFont;
+    font-weight: 600;
+    @include sm {
+      font-size: $normalFont;
+      font-weight: 500;
+    }
+    @include md;
+    @include lg {
+      font-size: $primaryFont;
+      font-weight: 500;
+    }
+  }
+}
