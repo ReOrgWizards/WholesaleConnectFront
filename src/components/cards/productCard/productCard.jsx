@@ -26,6 +26,7 @@ const WCProductCard = ({ image, title, description, price }) => {
   );
 };
 
+
 WCProductCard.propTypes = {
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
