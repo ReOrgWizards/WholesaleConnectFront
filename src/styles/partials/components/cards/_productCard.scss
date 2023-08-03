@@ -14,12 +14,25 @@
   @mixin xlg {
     width: 300px;
   }
-  @mixin md {
-    width: 300px;
-  }
   .product__card__img__container {
     height: 300px;
     width: 300px;
+    @mixin sm {
+      width: 200px;
+      height: 200px;
+    }
+    @mixin md {
+      width: 250px;
+      height: 250px;
+    }
+    @mixin lg {
+      width: 300px;
+      height: 300px;
+    }
+    @mixin xlg {
+      width: 300px;
+      height: 300px;
+    }
     img {
       height: 100%;
       width: 100%;
