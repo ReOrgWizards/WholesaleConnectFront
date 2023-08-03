@@ -1,14 +1,27 @@
 .slider_container {
   width: 1140px;
   margin: $auto;
+  @mixin sm {
+    width: 320px;
+  }
+  @mixin md {
+    width: 540px;
+  }
+  @mixin lg {
+    width: 720px !important;
+  }
+  @mixin xl {
+    width: 1140px;
+  }
   .slick-prev,
   .slick-next {
-    background: $primaryColor  !important;
+    background: $primaryColor !important;
     width: 25px !important;
     height: 25px !important;
     border-radius: 50% !important;
   }
-  .slick-prev::before, .slick-next::before{
-    color:white !important;
+  .slick-prev::before,
+  .slick-next::before {
+    color: $secondaryColor !important;
   }
 }
