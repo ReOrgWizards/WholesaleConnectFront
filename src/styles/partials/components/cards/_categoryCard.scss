@@ -12,6 +12,9 @@
       width: 200px;
       margin: $auto;
       border-radius: $spacing-8;
+      @include sm {
+        width: 155px;
+      }
     }
   }
   p {

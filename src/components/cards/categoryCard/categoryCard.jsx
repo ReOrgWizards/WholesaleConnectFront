@@ -7,7 +7,7 @@ const WCCategoryCard = () => (
     {categoryArr.map((category, index) => (
       <div className="category__card__container">
         <div className="category__card__img__container">
-          <img src={category.img} alt="category" />
+          <img src={category.img} alt={category.title} />
         </div>
         <p>{category.title}</p>
       </div>
