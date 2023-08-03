@@ -1,6 +1,6 @@
 ## Ticket No
 
-[Enter the corresponding ticket number or reference (if applicable) for this pull request.]
+Ticket Info : [Enter the corresponding ticket number or reference (if applicable) for this pull request.]
 
 ## Description
 
