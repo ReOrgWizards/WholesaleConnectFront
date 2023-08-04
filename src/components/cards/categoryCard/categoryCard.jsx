@@ -1,12 +1,18 @@
 import PropTypes from "prop-types";
+import WCSliderProvider from "../../slider/sliderProvider";
+import { categoryArr } from "../../../data";
 
-const WCCategoryCard = (props) => (
-  <div className="category__card__container">
-    <div className="category__card__img__container">
-      <img src={props.image} alt="category" />
-    </div>
-    <p>{props.title}</p>
-  </div>
+const WCCategoryCard = () => (
+  <WCSliderProvider>
+    {categoryArr.map((category, index) => (
+      <div className="category__card__container">
+        <div className="category__card__img__container">
+          <img src={category.img} alt={category.title} />
+        </div>
+        <p>{category.title}</p>
+      </div>
+    ))}
+  </WCSliderProvider>
 );
 
 WCCategoryCard.propTypes = {
