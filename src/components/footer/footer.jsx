@@ -12,29 +12,28 @@ import {
 const WCFooter = () => {
   return (
     <div className="footer__container">
-      <div className="social__media__touch">
+      <div className="social__media__wrapper">
         <div>
           <p>Get connected with us on social networks.</p>
         </div>
         <div className="social__media__icons">
-          <InstagramIcon className="icon" />
-          <FacebookIcon className="icon" />
-          <TwitterIcon className="icon" />
-          <LinkedInIcon className="icon" />
+          <InstagramIcon />
+          <FacebookIcon />
+          <TwitterIcon />
+          <LinkedInIcon />
         </div>
       </div>
       <hr />
-      <div className="contact__info__links">
-        <div className="shopify_nepal">
-          <h3 className="foot__links__heading">SHOPIFY NEPAL</h3>
+      <div className="footer__menu__wrapper">
+        <div className="footer__menu__header">
+          <h3>SHOPIFY NEPAL</h3>
           <p>
-            With decades of maintenance of way expertise ,
-            <br />
-            and experience no one knows the rail like Loram.
+            With decades of maintenance of way expertise,and experience 
+            no one knows the rail like Loram.no one knows the rail like Loram.
           </p>
         </div>
-        <div className="products_list">
-          <h3 className="foot__links__heading">PRODUCTS</h3>
+        <div className="footer__menu">
+          <h3>PRODUCTS</h3>
           <ul>
             <li>
               <a href="#">Laptops</a>
@@ -50,7 +49,7 @@ const WCFooter = () => {
             </li>
           </ul>
         </div>
-        <div className="useful_links">
+        <div className="footer__menu">
           <h3 className="foot__links__heading">USEFUL LINKS</h3>
           <ul>
             <li>
@@ -67,32 +66,30 @@ const WCFooter = () => {
             </li>
           </ul>
         </div>
-        <div className="contact_us">
+        <div className="footer__menu">
           <h3 className="foot__links__heading">CONTACT</h3>
           <ul>
             <li>
-              <span>
-                <HomeWorkIcon className="custom-icon" />
-              </span>
-              <a href="#">Kathmandu, Nepal</a>
+              <a href="#">
+                <HomeWorkIcon /> Kathmandu, Nepal
+              </a>
             </li>
             <li>
-              <span>
+              <a href="#">
                 <EmailIcon />
-              </span>
-              <a href="#">info@example.com</a>
+                info@example.com
+              </a>
             </li>
             <li>
-              <span>
-                <PhoneIcon />
-              </span>
-              <a href="#">+12 345 897 89</a>
+              <a href="#">
+                <PhoneIcon/>+12 345 897 89
+              </a>
             </li>
           </ul>
         </div>
       </div>
       <hr />
-      <div className="copyright__date__section">
+      <div className="copyright__date__wrapper">
         <p>
           ©{new Date().getFullYear()} Copyright:&nbsp;
           <a href="#">Shopify Nepal</a>

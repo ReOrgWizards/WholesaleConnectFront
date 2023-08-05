@@ -4,78 +4,107 @@
   font-family: $font-family;
   letter-spacing: $letter-spacing;
   padding: 1rem 3rem;
-  margin: $spacing-32 0px;
+  margin: $spacing-32 0px 0px;
+ @include sm{
+  padding: 1rem 1.5rem;
+ }
   hr {
     color: $offWhiteColor;
   }
-  .social__media__touch {
+  .social__media__wrapper {
     display: flex;
     justify-content: space-between;
     color: $offWhiteColor;
-    p {
+    p 
+    {
       @include sm {
         display: none;
       }
     }
     .social__media__icons {
       display: flex;
-      justify-content: space-between;
+      gap: 20px;
       align-items: center;
       color: $offWhiteColor;
       @include sm {
-        display: block;
-        margin: auto;
+       gap:10px;
+       margin:auto;
+
       }
     }
   }
-  .contact__info__links {
+  .footer__menu__wrapper {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
     text-align: left;
-    @include sm {
-      display: block;
-    }
-    .foot__links__heading {
-      color: $tertiaryColor;
-      font-weight: $bold;
-      font-size: $primaryFont;
-    }
-    p {
-      margin: $spacing-32 0;
-      color: $offWhiteColor;
-    }
-    ul {
-      margin-top: $spacing-32;
-      padding: 0px;
-      font-family: $font-family;
-      letter-spacing: $letter-spacing;
-      @include sm {
-        margin-bottom: $spacing-32;
-      }
-      li {
-        list-style: none;
-        margin: $spacing-16 0;
-        span {
-          color: $offWhiteColor !important;
-
-          .custom-icon {
-            font-size: $normalFont !important;
-          }
+    .footer__menu__header {
+      max-width: 40%;
+      @include sm{
+        max-width: 100%;
         }
-        a {
-          text-decoration: none;
-          color: $offWhiteColor;
-          font-size: $primaryColor;
-          margin-left: 3px;
+        @include md{
+          max-width: 100%;
+          }
+      @include lg{
+      max-width: 100%;
+      }
+      h3 {
+        color: $tertiaryColor;
+        font-weight: $bold;
+        font-size: $primaryFont;
+        @include sm {
+          text-align: center;
+        }
+        @include md {
+          text-align: center;
+        }
+        @include lg {
+          text-align: center;
+        }
+      }
+      p
+       {
+        margin-top: $spacing-32;
+        color: $offWhiteColor;
+        @include sm {
+          margin-top: $spacing-8;
+        }
+      }
+    }
+    .footer__menu {
+      h3 {
+        color: $tertiaryColor;
+        font-weight: $bold;
+        font-size: $primaryFont;
+      }
+      ul {
+        margin-top: $spacing-32;
+        padding: 0px;
+        font-family: $font-family;
+        letter-spacing: $letter-spacing;
+        @include sm {
+          margin-top: $spacing-8;
+          margin-bottom: $spacing-16;
+        }
+        li {
+          list-style: none;
+          margin: $spacing-16 0;
+          @include sm {
+            margin: $spacing-8 0;
+          }
+          a {
+            text-decoration: none;
+            color: $offWhiteColor;
+            font-size: $primaryColor;
+            display: flex;
+            gap:5px;
+          }
         }
       }
     }
   }
-  .copyright__date__section {
+  .copyright__date__wrapper {
     text-align: center;
     p {
       font-size: $normalFont;
