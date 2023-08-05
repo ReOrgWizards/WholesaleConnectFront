@@ -33,3 +33,78 @@ export const categoryArr = [{
 },
 
 ]
+
+export const navCategories = [
+    {
+      id: 1,
+      name: "Electronics",
+      categories: [
+        { id: 1, name: "TV & Video" },
+        { id: 2, name: "Computers & Tablets" },
+        { id: 3, name: "Cell Phones" },
+      ],
+    },
+    {
+      id: 2,
+      name: "Home & Kitchen",
+      categories: [
+        { id: 4, name: "Furniture" },
+        { id: 5, name: "Appliances" },
+        { id: 6, name: "Cookware & Bakeware" },
+      ],
+    },
+    {
+      id: 3,
+      name: "Fashion",
+      categories: [
+        { id: 7, name: "Men" },
+        { id: 8, name: "Women" },
+        { id: 9, name: "Kids" },
+      ],
+    },
+    {
+      id: 4,
+      name: "Beauty",
+      categories: [
+        { id: 10, name: "Makeup" },
+        { id: 11, name: "Skincare" },
+        { id: 12, name: "Fragrance" },
+      ],
+    },
+    {
+      id: 5,
+      name: "Toys & Games",
+      categories: [
+        { id: 13, name: "Action Figures" },
+        { id: 14, name: "Board Games" },
+        { id: 15, name: "Dolls & Accessories" },
+      ],
+    },
+    {
+      id: 6,
+      name: "Books",
+      categories: [
+        { id: 16, name: "Fiction" },
+        { id: 17, name: "Non-Fiction" },
+        { id: 18, name: "Children's Books" },
+      ],
+    },
+    {
+      id: 7,
+      name: "Sports & Fitness",
+      categories: [
+        { id: 19, name: "Exercise Equipment" },
+        { id: 20, name: "Team Sports" },
+        { id: 21, name: "Outdoor Recreation" },
+      ],
+    },
+    {
+      id: 8,
+      name: "Music",
+      categories: [
+        { id: 22, name: "CDs" },
+        { id: 23, name: "Vinyl" },
+        { id: 24, name: "Instruments" },
+      ],
+    },
+  ];

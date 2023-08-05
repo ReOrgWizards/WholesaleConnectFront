@@ -16,6 +16,9 @@ import {
 export const CartIcon = () => {
   return <ShoppingCart />;
 };
+export const ShoppingBagIcon = () => {
+  return < ShoppingBag />;
+};
 
 export const FavoriteIcon = () => {
   return <Favorite />;
