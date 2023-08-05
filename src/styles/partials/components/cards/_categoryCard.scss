@@ -9,11 +9,11 @@
     object-fit: cover;
     img {
       height: 200px;
-      width: 200px;
+      width: 160px;
       margin: $auto;
       border-radius: $spacing-8;
       @include sm {
-        width: 155px;
+        width: 140px;
       }
     }
   }
