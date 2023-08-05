@@ -8,12 +8,23 @@
     height: 100%;
     object-fit: cover;
     img {
-      height: 200px;
-      width: 160px;
+      height: 220px;
+      width: 180px;
       margin: $auto;
       border-radius: $spacing-8;
+      font-size: $tertiaryFont;
       @include sm {
         width: 140px;
+        height: 160px;
+      }
+      @include md {
+        width: 170px;
+        height: 190px;
+      }
+      @include lg {
+
+        width: 180px;
+        height: 200px;
       }
     }
   }
@@ -21,6 +32,13 @@
     margin-top: $spacing-8;
     font-size: $primaryFont;
     font-weight: $bold;
+    font-family: $font-family;
+    @include sm {
+      font-size: $normalFont;
+    }
+    @include md {
+      font-size: $normalFont;
+    }
     &:hover {
       color: $primaryColor;
     }
