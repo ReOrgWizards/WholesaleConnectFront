@@ -8,7 +8,8 @@ export const categoryArr = [
     description: "this is book",
     brand_img:
       "https://www.virginmegastore.qa/medias/Capslab-logo.webp?context=bWFzdGVyfHJvb3R8MzU0MnxhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW18aGExL2g1OC8xMDI5OTczMDQ5MzQ3MC9DYXBzbGFiLWxvZ28ud2VicHw0NjYzYjg3Mjg0ZDQ4ODEzMGQ5NGE3YjhhNTRkOWMxNGMwODdlNWYzNTZkNzVkZjk2MjNkZjkzZDBkYjRlYTY5",
-      brand_name:"unsplace9"
+    brand_name:"unsplace9",
+    price: "1200/-",
   },
   {
     id: 2,
@@ -17,7 +18,8 @@ export const categoryArr = [
     description: "this is game",
     brand_img:
       "https://www.virginmegastore.qa/medias/Unig-logo.webp?context=bWFzdGVyfHJvb3R8MTY1OHxhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW18aDMxL2hhNy8xMDI5OTcyNjY1OTYxNC9VbmlnLWxvZ28ud2VicHw5NWFkYmM0NTZlMTNlYjc4OTQ4ZTFkNDE3YTNmZjQyMTQ0ZDU0OWFjNDc2NWUxNDk4MjAxMjA4NTk2MzczZThl",
-      brand_name:"unsplace0"
+      brand_name:"unsplace0",
+    price: "1300/-",
   },
   {
     id: 3,
@@ -27,7 +29,10 @@ export const categoryArr = [
     description: "this is water",
     brand_img:
       "https://www.virginmegastore.qa/medias/Sonos-logo.webp?context=bWFzdGVyfHJvb3R8MzIzNHxhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW18aDlmL2gzNi8xMDI5OTcyODk1MzM3NC9Tb25vcy1sb2dvLndlYnB8MzgxMzhmMGQxMDRiYTlkZGI4N2Y3NTJhM2MxM2IxMjMyZDE1YThhNmQxYWU4NDliZWU3ZTE4OGExMjFjNjY3Yw",
-      brand_name:"unsplace2"
+      brand_name:"unsplace2",
+    title: "Water",
+    description: "this is water",
+    price:"1290/-"
   },
   {
     id: 4,
@@ -37,7 +42,10 @@ export const categoryArr = [
     description: "this is water",
     brand_img:
       "https://www.virginmegastore.qa/medias/Mountain-logo.webp?context=bWFzdGVyfHJvb3R8Mzk1NHxhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW18aDI0L2gwYS8xMDI5OTczMTI3OTkwMi9Nb3VudGFpbi1sb2dvLndlYnB8MzBmYWVmYjEwMTY1Y2Y2MGI5N2U3NGQ0NGJhYjBmOWI1NGUxNTAyYTVjZjhjMWQ3NTZlODI1NjNiYjJmYjhiOQ",
-      brand_name:"unsplace1"
+      brand_name:"unsplace1",
+    title: "Water",
+    description: "this is water",
+    price:"12990/-"
   },
   {
     id: 5,
@@ -64,7 +72,8 @@ export const categoryArr = [
     description: "this is book",
     brand_img:
       "https://www.virginmegastore.qa/medias/MiiR-logo.webp?context=bWFzdGVyfHJvb3R8MTU5OHxhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW18aGEzL2g1NS8xMDI5OTczMDU1OTAwNi9NaWlSLWxvZ28ud2VicHxkYjQ5ZWQyMGRlMzQ0YmJlNDRjZDBmYzZkMGVjNDc3MTg1YTcxMjQ2MGMxMGVkYTExNWFkYzQ4NjZhZDBkOTky",
-      brand_name:"unsplace9"
+      brand_name:"unsplace9",
+      price:"12009/-"
   },
  
 ];

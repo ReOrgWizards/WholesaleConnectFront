@@ -1,9 +1,12 @@
 @import "../../abstracts/_abstract-dir";
 
 .title__container {
+  font-family: $font-family;
+  letter-spacing: $letter-spacing;
   text-align: $center;
   text-transform: uppercase;
   padding: $spacing-32 0px;
+<<<<<<< HEAD
   font-family: $font-family;
   letter-spacing: $letter-spacing;
   @include sm {
@@ -12,6 +15,18 @@
   @include md;
   @include lg {
     padding: $spacing-16 0px;
+=======
+  @include sm{
+    padding: $spacing-12 0px;
+  }
+  @include md{
+    padding: $spacing-16 0px;
+
+  }
+  @include lg{
+    padding: $spacing-32 0px;
+
+>>>>>>> 91513a4b1b51ab8423bc5dfcb1bc1bb067448d28
   }
   p {
     font-size: $secondaryFont;
@@ -27,6 +42,12 @@
     @include lg {
       font-size: $secondaryFont;
       font-weight: 600;
+<<<<<<< HEAD
+=======
+    }
+    @include xlg{
+      font-weight: 600;
+>>>>>>> 91513a4b1b51ab8423bc5dfcb1bc1bb067448d28
     }
   }
 }
