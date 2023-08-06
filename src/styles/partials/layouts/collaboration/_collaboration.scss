@@ -7,14 +7,14 @@
     img {
       height: 110px;
       object-fit: cover;
-      padding: 0 10px 15px;
-      @include sm{
+      padding: 0 10px;
+      @include sm {
         height: 60px;
       }
-      @include md{
+      @include md {
         height: 65px;
       }
-      @include lg{
+      @include lg {
         height: 80px;
       }
     }

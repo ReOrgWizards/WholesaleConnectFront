@@ -1,11 +1,11 @@
 import "./App.scss";
 import { categoryArr } from "./data";
+import WCCollaborationSection from "./layouts/collaboration/collaboration";
 
 function App() {
   return (
     <>
-      <WCTitle title="Category Section" />
-      <WCCategorySection categoryArr={categoryArr} />
+      <WCCollaborationSection categoryArr ={categoryArr }/>
     </>
   );
 }

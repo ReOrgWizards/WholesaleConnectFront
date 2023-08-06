@@ -2,7 +2,7 @@ import React from "react";
 import WCTitle from "../../components/TItle/TItle";
 import PropTypes from "prop-types";
 
-const WCColloborationSection = ({ categoryArr }) => {
+const WCCollaborationSection = ({ categoryArr }) => {
   return (
     <div className="colloboration__container">
       <WCTitle title="Brand Colloboration" />
@@ -19,8 +19,8 @@ const WCColloborationSection = ({ categoryArr }) => {
   );
 };
 
-WCColloborationSection.PropTypes = {
+WCCollaborationSection.PropTypes = {
   categoryArr: PropTypes.array.isRequired,
 };
 
-export default WCColloborationSection;
+export default WCCollaborationSection;
