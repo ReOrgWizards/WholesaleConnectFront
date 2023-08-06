@@ -1,17 +1,12 @@
 import "./App.scss";
-// import WCCategoryCard from "./components/cards/categoryCard/categoryCard";
-// import WCTitle from "./components/TItle/TItle";
-import WCFooter from "./components/footer/footer";
-
-
-
+import WCTitle from "./components/TItle/TItle";
+import WCCategorySection from "./layouts/category/categorySection";
+import { categoryArr } from "./data";
 function App() {
   return (
     <>
-      {/* <WCTitle title="Category Section" /> */}
-      {/* <WCCategoryCard/> */}
-      <WCFooter/>
-      
+      <WCTitle title="Category Section" />
+      <WCCategorySection categoryArr={categoryArr}/>
     </>
   );
 }
