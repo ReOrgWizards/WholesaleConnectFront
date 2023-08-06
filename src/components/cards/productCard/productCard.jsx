@@ -5,7 +5,7 @@ const WCProductCard = ({ image, title, description, price }) => {
   return (
     <>
       <div className="product__card__container">
-        <div className="product__card__img__container">
+        <div className="product__card__img">
           <img src={image} alt={title} />
         </div>
         <div className="product__card__content">
