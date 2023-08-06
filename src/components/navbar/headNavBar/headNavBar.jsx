@@ -1,12 +1,30 @@
 import React from "react";
-import { companylogo } from "../../assets";
-import PersonIcon from "@mui/icons-material/Person";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
+import { companylogo } from "../../../assets/Images";
+import {
+  PersonIcon,
+  FavoriteIcon,
+  SearchIcon,
+  ShoppingBagIcon,
+} from "../../../assets/Icons";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Dropdown from "react-bootstrap/Dropdown";
-import Searchbar from "../Resuablecomponents/Searchbar";
 import { Link, NavLink } from "react-router-dom";
+
+const Searchbar = () => {
+  return (
+    <div className="searchbar__container">
+      <input
+        type="text"
+        className="search__bar"
+        placeholder="What are you looking for?"
+      />
+      <div className="search__icon">
+        <SearchIcon />
+      </div>
+    </div>
+  );
+};
+
 const WCHeadNavBar = () => {
   return (
     <div className="navbar__container">
@@ -53,11 +71,11 @@ const WCHeadNavBar = () => {
               outline: "none",
             }}
           >
-            <NavLink to='/wishlist'>
-            <FavoriteIcon
-              sx={{ fontSize: 30 }}
-              style={{ cursor: "pointer", color: "white" }}
-            />
+            <NavLink to="/wishlist">
+              <FavoriteIcon
+                sx={{ fontSize: 30 }}
+                style={{ cursor: "pointer", color: "white" }}
+              />
             </NavLink>
           </Dropdown.Toggle>
         </Dropdown>
@@ -70,11 +88,11 @@ const WCHeadNavBar = () => {
               outline: "none",
             }}
           >
-            <NavLink to='/cart'>
-            <ShoppingBagIcon
-              sx={{ fontSize: 30 }}
-              style={{ cursor: "pointer", color: "white" }}
-            />
+            <NavLink to="/cart">
+              <ShoppingBagIcon
+                sx={{ fontSize: 30 }}
+                style={{ cursor: "pointer", color: "white" }}
+              />
             </NavLink>
           </Dropdown.Toggle>
         </Dropdown>
@@ -84,4 +102,3 @@ const WCHeadNavBar = () => {
 };
 
 export default WCHeadNavBar;
-
