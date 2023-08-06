@@ -1,140 +1,84 @@
 @import "../../../abstracts/_abstract-dir";
 
-.product__card__container {
-  width: 220px;
-  font-family: $font-family;
+.productCard_container {
   cursor: pointer;
-  @include sm {
-    width: 140px;
+  padding: 20px;
+  .productCard_img_container {
+    text-align: $center !important;
+    justify-content:$center !important;
+    img {
+      height: 250px;
+      width: 100%;
+      margin:$auto;
+      border-radius:$spacing-8;
+      object-fit: cover;
+      @include sm {
+        width: 135px;
+        height: 160px;
+      }
+      @include md {
+        height: 180px;
+      }
+      @include lg {
+        height: 200px;
+      }
+    }
   }
-  @include md {
-    width: 160px;
-  }
-  @include lg {
-    width: 180px;
-  }
-  .product__card__img {
-    height: 250px;
-    width: 220px;
-    @include sm {
-      width: 140px;
-      height: 160px;
+  .product_title {
+    font-size: $primaryFont;
+    opacity: 40%;
+    margin-bottom:$spacing-4 !important;
+    @include sm{
+      font-size:$normalFont;
     }
     @include md {
-      width: 160px;
-      height: 180px;
-    }
-    @include lg {
-      width: 180px;
-      height: 200px;
-    }
-
-    img {
-      height: 100%;
-      width: 100%;
-      border-radius: 8px;
-      object-fit: cover;
+      font-size:$normalFont;
     }
   }
-  .product__card__content {
-    padding: 5px 0;
-    @include sm
-    {
-      padding: 0px;
+  .product_description {
+    line-height: 1.2;
+    font-weight: bold;
+    @include sm{
+      font-size:$normalFont;
     }
-    @include md
-    {
-      padding: 0px;
+    @include md {
+      font-size:$normalFont;
     }
-    @include lg {
-      padding: 0px;
+  }
+  .product_price {
+    font-size: $normalFont;
+    text-align: justify;
+    @include sm{
+      font-size:10px;
     }
-
-    .product__card__title {
-      font-size: $primaryFont;
-      color: $offWhiteColor;
-      letter-spacing: $letter-spacing;
-      margin: $spacing-8 0;
-      @include sm
-      {
-        font-size: $normalFont;
-        margin: $spacing-4 0;
+    @include md {
+      font-size:12px;
+    }
+    span {
+      font-size:20px;
+      font-weight: 500;
+      @include sm{
+        font-size:14px;
       }
       @include md {
-        font-size: $normalFont;
-        margin: $spacing-4 0;
+        font-size:13px;
       }
     }
-    .product__card__description {
-      font-size: $primaryFont;
-      color: $tertiaryColor;
-      letter-spacing: $letter-spacing;
-      margin: $spacing-8 0;
-      font-weight: $bold;
-      @include sm
-      {
-        font-size: $normalFont;
-        margin: $spacing-2 0;
-      }
-      @include md {
-        font-size: $normalFont;
-        margin: $spacing-4 0;
-      }
+  }
+  .product_icon {
+    text-align: end;
+    color: $primaryColor;
+    span {
+      margin-left:$spacing-12;
+      font-size:18px;
+    @include sm{
+      font-size: 12px;
+      margin-left:$spacing-8;
     }
-    .product__card__content {
-      display: flex;
-      justify-content: space-between;
-      .product__price__container {
-        font-size: $secondaryFont;
-        font-weight: $bold;
-        color: $tertiaryColor;
-        margin: $spacing-4 0;
-        @include sm
-        {
-          font-size: $normalFont;
-          margin: $spacing-2 0;
-        }
-        @include md {
-          font-size: $normalFont;
-          margin: $spacing-4 0;
-        }
-        @include lg {
-          font-size: $primaryFont;
-        }
-        span {
-          font-size: $normalFont;
-          color: $offWhiteColor;
-          @include sm
-          {
-            font-size: 12px;
-          }
-          @include lg
-          {
-            font-size: 12px;
-          }
-          @include md {
-            font-size: 12px;
-          }
-        }
-      }
-      .price__icon__container {
-        color: $primaryColor;
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: $spacing-4;
-        svg{
-          @include sm{
-            font-size:$primaryFont;
-          }
-          @include md{
-            font-size:18px;
-          }
-          @include lg{
-            font-size:$secondaryFont;
-          }
-         
-        }
-      }
+    @include md{
+      font-size: 12px;
+      margin-left:$spacing-8;
+    }
     }
   }
 }
