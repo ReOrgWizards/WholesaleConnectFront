@@ -21,22 +21,23 @@
       }
     }
   }
+
   .mega_menu_container {
     background-color: white;
     position: absolute !important;
     z-index: 9999;
-    width: 90%;
-    left: 5%;
+    // width: 90%;
+    // left: 5%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     .mega_menu {
       cursor: pointer;
-      padding: 30px 40px;
-      .mega_menu_title {
-        font-size: 14px;
-        font-weight: bold;
-        margin-bottom: 20px;
-      }
+      // padding: 30px 40px;
       .mega_menu_first {
+        .mega_menu_title {
+          font-size: 14px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
         ul {
           padding: 0px;
           li {
@@ -52,6 +53,7 @@
           }
         }
       }
+
       .mega_menu_third {
         .mega_menu_brands {
           .mega_menu_img {
@@ -65,8 +67,8 @@
         .mega_popular_picks {
           img {
             object-fit: cover;
-            height: 200px;
-            width: 200px;
+            height: 20px;
+            width: 20px;
             margin-bottom: 12px;
           }
           p {
@@ -78,6 +80,7 @@
       }
     }
   }
+
   .search_bar_menu {
     display: none;
     /* display: flex; */

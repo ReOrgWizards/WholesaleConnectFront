@@ -1,10 +1,12 @@
-import React from "react";
-import { navCategories } from "../../../data/index";
+import React, { useState } from "react";
+import {SearchIcon} from "../../../assets/Icons";
 
-const WCSubNavBar = () => {
+const WCSubNavBar = ({navCategories}) => {
+  const [hoverShowData, setHoverShowData] = useState(null);
+  console.log("hover data : ", hoverShowData);
   return (
     <>
-      <div className="sub_menu_container">
+    <div className="sub_menu_container">
         <div className="sub_menu">
           <ul>
             {navCategories.map((get, keys) => {
@@ -24,15 +26,19 @@ const WCSubNavBar = () => {
         <div
           className="mega_menu_container"
           onMouseEnter={() => setHoverShowData(hoverShowData)}
-          onMouseLeave={() => setHoverShowData(null)}
-        >
+          onMouseLeave={() => setHoverShowData(null)}>
           <div className="mega_menu">
             <div className="row">
-              <div className="col-md-2">
+              <div className="col-2">one</div>
+              <div className="col-2">two </div>
+              <div className="col-2">three</div>
+            </div>
+            <div className="row">
+              <div className="col-2">
                 <div className="mega_menu_first">
                   <h5 className="mega_menu_title">{hoverShowData?.name}</h5>
                   <ul>
-                    {hoverShowData?.categories?.map((get, keys) => {
+                    {hoverShowData?.navCategories?.map((get, keys) => {
                       return (
                         <li>
                           <p>{get?.name}</p>
@@ -42,7 +48,7 @@ const WCSubNavBar = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-md-2">
+              <div className="col-2">
                 <div className="mega_menu_first">
                   <h5 className="mega_menu_title">CATEGORY</h5>
                   <ul>
@@ -67,7 +73,7 @@ const WCSubNavBar = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-4">
                 <div className="mega_menu_third">
                   <h5 className="mega_menu_title">TOP BRANDS</h5>
                   <div className="mega_menu_brands">
@@ -146,7 +152,7 @@ const WCSubNavBar = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-4">
                 <div className="mega_menu_four">
                   <h5 className="mega_menu_title">POPULAR PICKS</h5>
                   <div className="row">
@@ -181,16 +187,6 @@ const WCSubNavBar = () => {
           </div>
         </div>
       )}
-      <div className="search_bar_menu">
-        <input
-          type="text"
-          className="search__bar"
-          placeholder="What are you looking for?"
-        />
-        <div className="search__icon">
-          <SearchIcon />
-        </div>
-      </div>
     </>
   );
 };

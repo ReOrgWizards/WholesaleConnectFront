@@ -44,16 +44,12 @@ const WCHeadNavBar = () => {
           >
             <PersonIcon/>
           </Dropdown.Toggle>
-          <Dropdown.Menu className="dropdown__menu__container">
-            <Dropdown.Item disabled className="dropdown__title">
-              WELCOME!
-            </Dropdown.Item>
-            <Dropdown.Divider />
-            <Dropdown.Item className="dropdown__items__one">
-              <Link to="/login_or_register">
+          <Dropdown.Menu className="user__dropdown__manu">
+            <Dropdown.Item className="user__dropdown__items">
+              <Link to="#">
                 <button className="signIn__btn">Sign In</button>
               </Link>
-              <Link to="/login_or_register">
+              <Link to="#">
                 <button className="register__btn">Register</button>
               </Link>
             </Dropdown.Item>
@@ -68,7 +64,7 @@ const WCHeadNavBar = () => {
               outline: "none",
             }}
           >
-            <NavLink to="/wishlist">
+            <NavLink to="#">
               <FavoriteIcon/>
             </NavLink>
           </Dropdown.Toggle>
