@@ -22,12 +22,12 @@
       li {
         list-style-type: none;
         p {
-          padding: 8px 4px;
+          padding: 15px 4px;
           cursor: pointer;
           font-size: 14px;
-          margin-bottom: none !important;
           color: $secondaryColor;
           font-weight: $bold;
+          margin-bottom: 0rem !important;
         }
       }
     }
@@ -58,6 +58,7 @@
           line-height: 2;
           p {
             font-size: $normalFont;
+           
           }
         }
       }

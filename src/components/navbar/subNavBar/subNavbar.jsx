@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 
 const WCSubNavBar = ({ navCategories }) => {
   const [hoverShowData, setHoverShowData] = useState(null);
-  console.log("hover data : ", hoverShowData);
   return (
     <>
       <div className="sub_menu_container">
