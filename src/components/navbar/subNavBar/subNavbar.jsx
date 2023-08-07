@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { SearchIcon } from "../../../assets/Icons";
+import PropTypes from "prop-types";
 
 const WCSubNavBar = ({ navCategories }) => {
   const [hoverShowData, setHoverShowData] = useState(null);
