@@ -1,0 +1,66 @@
+@import "../../../abstracts/_abstract-dir";
+
+.carousel-item {
+  img {
+    height: 60vh;
+    object-fit: cover;
+    @include sm {
+      height: 20vh;
+    }
+    @include md {
+      height: 25vh;
+    }
+    @include lg {
+      height: 30vh;
+    }
+  }
+  .carousel-caption {
+    @include sm {
+      padding-bottom: 0 !important;
+    }
+    h3 {
+      @include sm {
+        font-size: $normalFont;
+      }
+      @include md {
+        font-size: $primaryFont;
+      }
+      @include lg {
+        font-size: $secondaryFont;
+      }
+    }
+    p {
+      @include sm {
+        font-size: $normalFont;
+        margin-bottom: 0;
+      }
+      @include md {
+        font-size: $normalFont;
+        margin-bottom: 0;
+      }
+      @include lg {
+        font-size: $primaryFont;
+      }
+    }
+  }
+}
+
+.carousel-indicators {
+  @include sm {
+    display: none;
+  }
+  @include md {
+    display: none;
+  }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  span {
+    @include sm {
+      width: 1rem;
+      height: 1rem;
+      font-size: $bold;
+    }
+  }
+}
