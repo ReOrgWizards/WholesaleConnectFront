@@ -42,10 +42,7 @@ const WCHeadNavBar = () => {
               outline: "none",
             }}
           >
-            <PersonIcon
-              sx={{ fontSize: 30 }}
-              style={{ cursor: "pointer", color: "white" }}
-            />
+            <PersonIcon/>
           </Dropdown.Toggle>
           <Dropdown.Menu className="dropdown__menu__container">
             <Dropdown.Item disabled className="dropdown__title">
@@ -72,10 +69,7 @@ const WCHeadNavBar = () => {
             }}
           >
             <NavLink to="/wishlist">
-              <FavoriteIcon
-                sx={{ fontSize: 30 }}
-                style={{ cursor: "pointer", color: "white" }}
-              />
+              <FavoriteIcon/>
             </NavLink>
           </Dropdown.Toggle>
         </Dropdown>
@@ -89,10 +83,7 @@ const WCHeadNavBar = () => {
             }}
           >
             <NavLink to="/cart">
-              <ShoppingBagIcon
-                sx={{ fontSize: 30 }}
-                style={{ cursor: "pointer", color: "white" }}
-              />
+              <ShoppingBagIcon/>
             </NavLink>
           </Dropdown.Toggle>
         </Dropdown>

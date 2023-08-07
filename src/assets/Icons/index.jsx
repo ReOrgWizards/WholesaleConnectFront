@@ -10,9 +10,16 @@ import {
   Instagram,
   Twitter,
   FacebookOutlined,
+  LinkedIn,
+  HomeWork,
 } from "@mui/icons-material";
 
- 
+export const HomeWorkIcon = () => {
+  return <HomeWork />;
+};
+export const LinkedInIcon = () => {
+  return <LinkedIn />;
+};
 export const CartIcon = () => {
   return <ShoppingCart />;
 };
