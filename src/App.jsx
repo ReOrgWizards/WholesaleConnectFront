@@ -1,12 +1,9 @@
 import "./App.scss";
-import { categoryArr } from "./data";
-import WCCollaborationSection from "./layouts/collaboration/collaboration";
-
+import WCMasteraBanner from "./components/masterBanner/masterBanner";
 function App() {
   return (
     <>
-      <WCCollaborationSection categoryArr ={categoryArr }/>
-    </>
+      <WCMasteraBanner categoryArr={categoryArr} />
   );
 }
 
