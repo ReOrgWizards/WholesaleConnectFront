@@ -1,10 +1,9 @@
 import "./App.scss";
-import { categoryArr } from "./data";
-import WCHotDealsSection from "./layouts/hotDeals/hotdeals";
+import WCMasteraBanner from "./components/masterBanner/masterBanner";
 function App() {
   return (
     <>
-      <WCHotDealsSection categoryArr={categoryArr} />
+      <WCMasteraBanner categoryArr={categoryArr} />
     </>
   );
 }
