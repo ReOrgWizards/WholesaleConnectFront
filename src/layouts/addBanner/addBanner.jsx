@@ -24,4 +24,10 @@ const WCAddBannerSection = ({ categoryArr }) => {
   );
 };
 
+WCAddBannerSection.propTypes = {
+  bannerimg: PropTypes.string.isRequired,
+  bannerhed: PropTypes.string.isRequired,
+  bannerpara: PropTypes.string.isRequired,
+};
+
 export default WCAddBannerSection;
