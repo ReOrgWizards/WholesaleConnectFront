@@ -1,6 +1,6 @@
 @import "../../../abstracts/_abstract-dir";
 
-.sub_menu_container {
+.sub__menu__container {
   @include sm {
     display: none;
   }
@@ -10,7 +10,7 @@
   @include lg {
     display: none;
   }
-  .sub_menu {
+  .sub__menu {
     background-color: rgba(64, 126, 210, 0.6);
     ul {
       display: flex;
@@ -34,7 +34,7 @@
   }
 }
 
-.mega_menu_container {
+.mega__menu__container {
   margin: 0 $spacing-32;
   padding: $spacing-32;
   position: absolute;
@@ -42,8 +42,8 @@
   background: $secondaryColor;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   cursor: pointer;
-  .mega_menu {
-    .mega_menu_first {
+  .mega__menu {
+    .mega__menu__first {
       h5 {
         font-size: $primaryFont;
         font-weight: $bold;
@@ -63,14 +63,14 @@
         }
       }
     }
-    .mega_menu_third {
+    .mega__menu__third {
       h5 {
         font-size: $primaryFont;
         font-weight: $bold;
         margin-bottom: 20px;
         text-align: center;
       }
-      .mega_menu_brands {
+      .mega__menu__brands {
         text-align: $center;
         img {
           margin: 0 12px 12px;
@@ -79,17 +79,17 @@
         }
       }
     }
-    .mega_menu_forth {
+    .mega__menu__forth {
       h5 {
         font-size: $primaryFont;
         font-weight: $bold;
         margin-bottom: 20px;
         text-align: center;
       }
-      .maga_popular {
+      .maga__popular {
         display: flex;
         text-align: $center;
-        .mega_popular_picks {
+        .mega__popular__picks {
           padding: 0 $spacing-12;
           img {
             width: 150px;
@@ -106,7 +106,7 @@
   }
 }
 
-.search_bar_menu {
+.search__bar__menu {
   display: flex;
   align-items: center;
   justify-content: center;

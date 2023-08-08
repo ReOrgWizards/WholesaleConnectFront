@@ -1,5 +1,4 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
 import { companylogo } from "../../../assets/Images";
 import {
   PersonIcon,
@@ -10,14 +9,22 @@ import {
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Dropdown from "react-bootstrap/Dropdown";
 import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
 
 const Searchbar = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleInputChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
   return (
     <div className="searchbar__container">
       <input
         type="text"
         className="search__bar"
         placeholder="What are you looking for?"
+        value={searchTerm}         
+        onChange={handleInputChange} 
       />
       <div className="search__icon">
         <SearchIcon />
