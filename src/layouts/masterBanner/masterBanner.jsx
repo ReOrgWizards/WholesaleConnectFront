@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Carousel from "react-bootstrap/Carousel";
+import WCCarousel from "../../components/carousel/carousel";
 
-const WCMasteraBanner = ({ categoryArr }) => {
+const WCMasterBannerSection = ({ categoryArr }) => {
   return (
-    <Carousel fade>
+    <WCCarousel>
       {categoryArr.map((category) => (
         <Carousel.Item>
           <img
@@ -18,12 +19,14 @@ const WCMasteraBanner = ({ categoryArr }) => {
           </Carousel.Caption>
         </Carousel.Item>
       ))}
-    </Carousel>
+    </WCCarousel>
   );
 };
 
-WCMasteraBanner.propTypes = {
-  categoryArr: PropTypes.array.isRequired,
+WCMasterBannerSection.propTypes = {
+  bannerimg: PropTypes.string.isRequired,
+  bannerhed: PropTypes.string.isRequired,
+  bannerpara: PropTypes.string.isRequired,
 };
 
-export default WCMasteraBanner;
+export default WCMasterBannerSection;

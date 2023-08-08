@@ -1,12 +1,12 @@
 import "./App.scss";
-import WCMasteraBanner from "./components/masterBanner/masterBanner";
 import WCAddBannerSection from "./layouts/addBanner/addBanner";
 import { categoryArr } from "./data";
+import WCMasterBannerSection from "./layouts/masterBanner/masterBanner";
 function App() {
   return (
     <>
-      <WCMasteraBanner categoryArr={categoryArr} />
       <WCAddBannerSection categoryArr={categoryArr} />
+      <WCMasterBannerSection categoryArr={categoryArr} />
     </>
   );
 }
