@@ -9,8 +9,8 @@ const WCCategorySection = ({categoryArr}) => {
     <>
     <WCTitle title="Category Section" />
     <WCSliderProvider>
-      {categoryArr.map((category,key) => (
-        <WCCategoryCard keys={key} image={category.img} title={category.title} />
+      {categoryArr.map((category,id) => (
+        <WCCategoryCard keys={id} image={category.img} title={category.title} />
       ))}
     </WCSliderProvider>
     </>

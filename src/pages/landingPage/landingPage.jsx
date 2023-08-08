@@ -5,8 +5,7 @@ import WCCollaborationSection from "../../layouts/collaboration/collaboration";
 import WCAddBannerSection from "../../layouts/addBanner/addBanner";
 import { categoryArr } from "../../data";
 import WCHotDealsSection from "../../layouts/hotDeals/hotdeals";
-import WCProductCard from "../../components/cards/productCard/productCard";
-import WCProductSection from "../../layouts/product/productSection";
+import WCProductDetailsSection from "../../layouts/productDetails/productDetails";
 
 const WCLandingPage = () => {
   return (
@@ -14,7 +13,7 @@ const WCLandingPage = () => {
       <WCMasterBannerSection categoryArr={categoryArr} />
       <WCCategorySection categoryArr={categoryArr} />
       <WCCollaborationSection categoryArr={categoryArr} />
-      <WCProductSection categoryArr={categoryArr}/>
+      <WCProductDetailsSection categoryArr={categoryArr}/>
       <WCAddBannerSection categoryArr={categoryArr} />
       <WCHotDealsSection categoryArr={categoryArr}/>
     </>

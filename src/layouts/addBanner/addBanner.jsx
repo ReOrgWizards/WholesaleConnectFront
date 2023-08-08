@@ -7,9 +7,10 @@ const WCAddBannerSection = ({ categoryArr }) => {
   return (
     <div className="container mt-4">
       <WCCarousel>
-        {categoryArr.map((category) => (
+        {categoryArr.map((category,id) => (
           <Carousel.Item>
             <img
+            key={id}
               className="d-block w-100 add__banner"
               src={category.bannerimg}
               alt={category.bannerhed}

@@ -2,8 +2,8 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import WCLandingPage from "../pages/landingpage/landingPage";
 
-const Routes = () => {
+const WCRoutes = () => {
   return <Route path="/" element={<WCLandingPage />} />;
 };
 
-export default Routes;
+export default WCRoutes;

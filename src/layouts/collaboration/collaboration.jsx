@@ -8,9 +8,9 @@ const WCCollaborationSection = ({ categoryArr }) => {
            <WCTitle title="Brand Colloboration" />
       <div className="coloboration__wrapper">
 
-        {categoryArr.map((category, index) => (
+        {categoryArr.map((category,id) => (
           <img
-            keys={index}
+            keys={id}
             src={category.brand_img}
             alt={category.brand_name}
           />

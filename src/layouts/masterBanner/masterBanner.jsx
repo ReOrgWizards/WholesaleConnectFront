@@ -6,9 +6,10 @@ import WCCarousel from "../../components/carousel/carousel";
 const WCMasterBannerSection = ({ categoryArr }) => {
   return (
     <WCCarousel>
-      {categoryArr.map((category) => (
+      {categoryArr.map((category,id) => (
         <Carousel.Item>
           <img
+          key={id}
             className="d-block w-100 master__banner"
             src={category.bannerimg}
             alt={category.bannerhed}
