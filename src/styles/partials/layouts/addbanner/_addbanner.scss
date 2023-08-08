@@ -1,0 +1,17 @@
+@import "../../components/carousel/_carousel-dir";
+
+ .carousel-item {
+  .add__banner {
+    height: 40vh;
+    object-fit: cover;
+    @include sm{
+      height: 25vh;
+    }
+    @include md{
+      height: 30vh;
+    }
+    @include lg{
+      height:30vh;
+    }
+  }
+}

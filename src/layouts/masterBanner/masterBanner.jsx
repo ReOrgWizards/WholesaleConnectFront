@@ -9,7 +9,7 @@ const WCMasterBannerSection = ({ categoryArr }) => {
       {categoryArr.map((category) => (
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-100 master__banner"
             src={category.bannerimg}
             alt={category.bannerhed}
           />
