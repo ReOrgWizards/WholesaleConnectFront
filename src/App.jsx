@@ -1,12 +1,14 @@
 import "./App.scss";
-import WCAddBannerSection from "./layouts/addBanner/addBanner";
-import { categoryArr } from "./data";
-import WCMasterBannerSection from "./layouts/masterBanner/masterBanner";
+import WCFooter from "./components/footer/footer";
+import WCNavBarSection from "./layouts/navbar/navBar";
+import WCLandingPage from "./pages/landingpage/landingPage";
+
 function App() {
   return (
     <>
-      <WCAddBannerSection categoryArr={categoryArr} />
-      <WCMasterBannerSection categoryArr={categoryArr} />
+      <WCNavBarSection />
+      <WCLandingPage />
+      <WCFooter/>
     </>
   );
 }

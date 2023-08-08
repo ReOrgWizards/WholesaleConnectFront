@@ -5,12 +5,12 @@ import WCCarousel from "../../components/carousel/carousel";
 
 const WCAddBannerSection = ({ categoryArr }) => {
   return (
-    <div className="container">
+    <div className="container mt-4">
       <WCCarousel>
         {categoryArr.map((category) => (
           <Carousel.Item>
             <img
-              className="d-block w-100"
+              className="d-block w-100 "
               src={category.bannerimg}
               alt={category.bannerhed}
             />

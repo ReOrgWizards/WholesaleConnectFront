@@ -11,6 +11,7 @@ import {
 
 const WCFooter = () => {
   return (
+    <div className="container">
     <div className="footer__container">
       <div className="social__media__wrapper">
         <div>
@@ -95,6 +96,7 @@ const WCFooter = () => {
           <a href="#">Shopify Nepal</a>
         </p>
       </div>
+    </div>
     </div>
   );
 };
