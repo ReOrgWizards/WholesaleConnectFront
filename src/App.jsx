@@ -1,16 +1,14 @@
 import "./App.scss";
-import WCMasteraBanner from "./components/masterBanner/masterBanner";
-import WCHeadNavBar from "./components/navbar/headNavBar/headNavBar";
-import WCSubNavBar from "./components/navbar/subNavBar/subNavbar";
-import {navCategories,categoryArr } from "./data"
-
+import WCFooter from "./components/footer/footer";
+import WCNavBarSection from "./layouts/navbar/navBar";
+import WCLandingPage from "./pages/landingpage/landingPage";
 
 function App() {
   return (
     <>
-      <WCHeadNavBar />
-      <WCSubNavBar  navCategories={navCategories}/>
-      <WCMasteraBanner categoryArr={categoryArr}/>
+      <WCNavBarSection />
+      <WCLandingPage />
+      <WCFooter/>
     </>
   );
 }

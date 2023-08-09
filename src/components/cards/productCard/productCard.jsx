@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { CartIcon, FavoriteIcon } from "../../../assets/Icons";
 const WCProductCard = ({ image, title, description, price }) => {
   return (
     <>
