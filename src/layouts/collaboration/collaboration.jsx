@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 const WCCollaborationSection = ({ categoryArr }) => {
   return (
+    <div className="container">
     <div className="colloboration__container">
            <WCTitle title="Brand Colloboration" />
       <div className="coloboration__wrapper">
@@ -16,6 +17,7 @@ const WCCollaborationSection = ({ categoryArr }) => {
           />
         ))}
       </div>
+    </div>
     </div>
   );
 };

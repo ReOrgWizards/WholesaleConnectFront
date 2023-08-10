@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { companylogo } from "../../../assets/Images";
 import {
   PersonIcon,
@@ -12,7 +12,7 @@ import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 
 const Searchbar = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
 
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value);
@@ -23,8 +23,8 @@ const Searchbar = () => {
         type="text"
         className="search__bar"
         placeholder="What are you looking for?"
-        value={searchTerm}         
-        onChange={handleInputChange} 
+        value={searchTerm}
+        onChange={handleInputChange}
       />
       <div className="search__icon">
         <SearchIcon />
@@ -44,13 +44,13 @@ const WCHeadNavBar = () => {
         <Dropdown as={ButtonGroup}>
           <Dropdown.Toggle
             style={{
-              backgroundColor: "#407ED2",
-              color: "#407ED2",
+              background: "transparent",
+              color: "#25d366",
               border: "none",
               outline: "none",
             }}
           >
-            <PersonIcon/>
+            <PersonIcon />
           </Dropdown.Toggle>
           <Dropdown.Menu className="user__dropdown__manu">
             <Dropdown.Item className="user__dropdown__items">
@@ -66,28 +66,28 @@ const WCHeadNavBar = () => {
         <Dropdown>
           <Dropdown.Toggle
             style={{
-              backgroundColor: "#407ED2",
-              color: "#407ED2",
+              backgroundColor: "transparent",
+              color: "#25d366",
               border: "none",
               outline: "none",
             }}
           >
             <NavLink to="#">
-              <FavoriteIcon/>
+              <FavoriteIcon />
             </NavLink>
           </Dropdown.Toggle>
         </Dropdown>
         <Dropdown>
           <Dropdown.Toggle
             style={{
-              backgroundColor: "#407ED2",
-              color: "#407ED2",
+              backgroundColor: "transparent",
+              color: "#25d366",
               border: "none",
               outline: "none",
             }}
           >
             <NavLink to="/cart">
-              <ShoppingBagIcon/>
+              <ShoppingBagIcon />
             </NavLink>
           </Dropdown.Toggle>
         </Dropdown>

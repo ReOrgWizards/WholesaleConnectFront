@@ -16,10 +16,10 @@
     outline: none;
     border: none;
     font-size: 15px;
-    &::placeholder{
+    &::placeholder {
       font-family: $font-family;
       letter-spacing: $letter-spacing;
-      color:$offWhiteColor;
+      color: $offWhiteColor;
     }
   }
 
@@ -27,8 +27,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background:$secondaryColor;
-    color:$offWhiteColor;
+    background: $secondaryColor;
+    color: $offWhiteColor;
     padding: 5px;
     height: 40px;
     width: 40px;
@@ -50,18 +50,18 @@
 .navbar__container {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #407ed2;
+  background: $primaryColor;
   height: 15vh;
   width: 100%;
   @include sm {
     justify-content: space-between;
     height: 8vh;
   }
-   @include md {
+  @include md {
     justify-content: space-around;
     height: 8vh;
   }
@@ -73,7 +73,7 @@
     height: 70px;
     @include sm {
       margin-left: 40px;
-        height: 60px;
+      height: 60px;
     }
     @include lg {
       margin-left: 50px;
@@ -103,7 +103,7 @@
     .user__dropdown__manu {
       margin: $spacing-32 0;
       padding: $spacing-12 0;
-    background:$offWhiteColor;
+      background: $offWhiteColor;
       width: 250px;
       @include sm {
         width: 190px;

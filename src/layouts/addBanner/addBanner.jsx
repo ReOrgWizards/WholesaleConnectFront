@@ -5,7 +5,7 @@ import WCCarousel from "../../components/carousel/carousel";
 
 const WCAddBannerSection = ({ categoryArr }) => {
   return (
-    <div className="container mt-4">
+    <div className="container">
       <WCCarousel>
         {categoryArr.map((category,id) => (
           <Carousel.Item>
