@@ -44,3 +44,12 @@
     }
   }
 }
+
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  .category__card__img__container{
+    img {
+    height: 150px !important;
+    width:110px !important;
+  }
+}
+}

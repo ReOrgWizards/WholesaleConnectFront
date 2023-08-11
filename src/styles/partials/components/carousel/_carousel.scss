@@ -1,6 +1,7 @@
 @import "../../../abstracts/_abstract-dir";
 
 .carousel-item {
+  margin-bottom:1rem;
   .carousel-caption {
     @include sm {
       padding-bottom: 0;

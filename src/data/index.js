@@ -17,7 +17,7 @@ export const categoryArr = [
   },
   {
     id: 2,
-    img: "https://images.unsplash.com/photo-1616801060191-6085bad82f95?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-1691546039838-2494ecd6afd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
     title: "Game",
     description: "this is game",
     brand_img:
@@ -32,7 +32,6 @@ export const categoryArr = [
   {
     id: 3,
     img: "https://images.unsplash.com/photo-1690660437195-a65346cd276a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-
     title: "Water",
     description: "this is water",
     brand_img:
@@ -49,7 +48,6 @@ export const categoryArr = [
   {
     id: 4,
     img: "https://images.unsplash.com/photo-1690660437195-a65346cd276a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-
     title: "Water",
     description: "this is water",
     brand_img:
@@ -70,7 +68,7 @@ export const categoryArr = [
     description: "this is water",
     price: "12009/-",
     bannerimg:
-      "https://images.unsplash.com/photo-1541574823565-f1d660886187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZWxlY3Ryb25pY2dhZ2V0JTIwJTIwc2hvcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1691273553489-615e4279af43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
     bannerhed: "third slide label",
     bannerpara: "Some representative placeholder content for the first slide.",
     brand_img:
@@ -79,7 +77,7 @@ export const categoryArr = [
   },
   {
     id: 6,
-    img: "https://images.unsplash.com/photo-1690660437195-a65346cd276a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    img: "https://images.unsplash.com/photo-1691573155562-bb83d1237f23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
     title: "Water",
     description: "this is water",
     brand_img:
@@ -108,7 +106,7 @@ export const navCategories = [
       { id: 3, name: "Cell Phones" },
     ],
     brand:
-    "https://www.virginmegastore.qa/medias/Merchant-Ambassador-logo.webp?context=bWFzdGVyfHJvb3R8MzI1OHxhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW18aGYwL2hhYS8xMDI5OTcyNjUyODU0Mi9NZXJjaGFudC1BbWJhc3NhZG9yLWxvZ28ud2VicHw1Y2QxMWVlNmU3YmFiODBjYThiOWZlZDI4NWMyYjMxODY5NDdjZTM4N2NkMGQwMmZkNjdlYmUxMDM5NGQ5Mjdm",
+      "https://www.virginmegastore.qa/medias/Merchant-Ambassador-logo.webp?context=bWFzdGVyfHJvb3R8MzI1OHxhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW18aGYwL2hhYS8xMDI5OTcyNjUyODU0Mi9NZXJjaGFudC1BbWJhc3NhZG9yLWxvZ28ud2VicHw1Y2QxMWVlNmU3YmFiODBjYThiOWZlZDI4NWMyYjMxODY5NDdjZTM4N2NkMGQwMmZkNjdlYmUxMDM5NGQ5Mjdm",
   },
   {
     id: 2,
@@ -120,8 +118,7 @@ export const navCategories = [
     ],
     brand:
       "https://www.virginmegastore.qa/medias/Sonos-logo.webp?context=bWFzdGVyfHJvb3R8MzIzNHxhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW18aDlmL2gzNi8xMDI5OTcyODk1MzM3NC9Tb25vcy1sb2dvLndlYnB8MzgxMzhmMGQxMDRiYTlkZGI4N2Y3NTJhM2MxM2IxMjMyZDE1YThhNmQxYWU4NDliZWU3ZTE4OGExMjFjNjY3Yw",
-  
-    },
+  },
   {
     id: 3,
     name: "Fashion",
