@@ -5,17 +5,17 @@ import { Link } from "react-router-dom";
 const WCProductCard = ({ image, title, description, price }) => {
   return (
     <>
-      <div className="productCard_container">
-        <div class="card border-0">
-          <div className="productCard_img_container">
+      <div className="product__card__container">
+        <div className="card border-0">
+          <div className="product__card__img__container">
             <img src={image} alt="product" />
           </div>
-          <div class="card-body card__dby__content">
-            <p className="product_title">{title}</p>
-            <p className="product_description">{description}</p>
+          <div className="card-body card__dby__content">
+            <p className="product__title">{title}</p>
+            <p className="product__description">{description}</p>
             <ul>
               <li>
-                <p className="product_price">
+                <p className="product__price">
                   Rs. <span>1200/-</span>
                 </p>
               </li>
@@ -24,6 +24,7 @@ const WCProductCard = ({ image, title, description, price }) => {
                   to="https://web.whatsapp.com/"
                   target="_blank"
                   class="chat__btn"
+                  rel="noopener"
                 >
                   <button className="btn btn-primary ">Chat</button>
                 </Link>
