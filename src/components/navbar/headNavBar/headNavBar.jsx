@@ -49,6 +49,7 @@ const WCHeadNavBar = () => {
               border: "none",
               outline: "none",
             }}
+            className="toggle__btn"
           >
             <PersonIcon />
           </Dropdown.Toggle>

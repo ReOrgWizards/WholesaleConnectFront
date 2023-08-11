@@ -6,8 +6,16 @@ import { navCategories } from "../../data";
 const WCNavBarSection = () => {
   return (
     <>
+      <div
+        style={{
+          position: "sticky",
+          top: "0",
+          zIndex: "1000",
+        }}
+      >
         <WCHeadNavBar />
         <WCSubNavBar navCategories={navCategories} />
+      </div>
     </>
   );
 };
