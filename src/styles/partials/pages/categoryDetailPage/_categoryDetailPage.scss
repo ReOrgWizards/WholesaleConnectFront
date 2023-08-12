@@ -29,11 +29,11 @@
       transition: all 0.3s ease-in;
       @include sm {
         padding: 0.3rem 2rem;
-        font-size: 14px;
+        font-size: $normalFont;
         margin: 10px 0 30px;
       }
       @include md {
-        font-size: 14px;
+        font-size: $normalFont;
         margin: 10px 0 30px;
       }
       &:hover {
