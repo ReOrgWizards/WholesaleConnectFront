@@ -7,6 +7,10 @@
  @include sm{
   padding: 1rem 1.5rem;
  }
+ @include lg{
+  margin: $spacing-16 0;
+ }
+
   hr {
     color: $offWhiteColor;
   }
@@ -19,6 +23,7 @@
       @include sm {
         display: none;
       }
+     
     }
     .social__media__icons {
       display: flex;
@@ -69,6 +74,9 @@
         @include sm {
           margin-top: $spacing-8;
         }
+        @include lg{
+          margin-top:16px;
+        }
       }
     }
     .footer__menu {
@@ -85,6 +93,9 @@
         @include sm {
           margin-top: $spacing-8;
           margin-bottom: $spacing-16;
+        }
+        @include lg{
+          margin-top:16px;
         }
         li {
           list-style: none;

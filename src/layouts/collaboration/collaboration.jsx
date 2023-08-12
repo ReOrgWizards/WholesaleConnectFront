@@ -4,9 +4,10 @@ import PropTypes from "prop-types";
 
 const WCCollaborationSection = ({ categoryArr }) => {
   return (
-    <div className="colloboration__container">
-           <WCTitle title="Brand Colloboration" />
-      <div className="coloboration__wrapper">
+    <div className="container">
+    <div className="collaboration__container">
+           <WCTitle title="Brand Collaboration" />
+      <div className="collaboration__wrapper">
 
         {categoryArr.map((category,id) => (
           <img
@@ -16,6 +17,7 @@ const WCCollaborationSection = ({ categoryArr }) => {
           />
         ))}
       </div>
+    </div>
     </div>
   );
 };

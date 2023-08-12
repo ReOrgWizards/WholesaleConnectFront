@@ -16,10 +16,10 @@
     outline: none;
     border: none;
     font-size: 15px;
-    &::placeholder{
+    &::placeholder {
       font-family: $font-family;
       letter-spacing: $letter-spacing;
-      color:$offWhiteColor;
+      color: $offWhiteColor;
     }
   }
 
@@ -27,8 +27,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background:$secondaryColor;
-    color:$offWhiteColor;
+    background: $secondaryColor;
+    color: $offWhiteColor;
     padding: 5px;
     height: 40px;
     width: 40px;
@@ -48,20 +48,17 @@
 // WCHeadNavBar
 
 .navbar__container {
-  position: sticky;
-  top: 0;
-  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #407ed2;
+  background: $primaryColor;
   height: 15vh;
   width: 100%;
   @include sm {
     justify-content: space-between;
     height: 8vh;
   }
-   @include md {
+  @include md {
     justify-content: space-around;
     height: 8vh;
   }
@@ -73,7 +70,7 @@
     height: 70px;
     @include sm {
       margin-left: 40px;
-        height: 60px;
+      height: 60px;
     }
     @include lg {
       margin-left: 50px;
@@ -85,6 +82,9 @@
     width: 130px;
     justify-content: space-between;
     align-items: center;
+    .dropdown-toggle:focus {
+      box-shadow: none !important;
+    }
     svg {
       color: $secondaryColor;
       cursor: pointer;
@@ -101,10 +101,20 @@
       justify-content: flex-start;
     }
     .user__dropdown__manu {
-      margin: $spacing-32 0;
+      margin: $spacing-8 0;
       padding: $spacing-12 0;
-    background:$offWhiteColor;
+      background: $secondaryColor;
       width: 250px;
+      .dropdown-item:active {
+        background-color: transparent !important;
+        color: transparent !important;
+      }
+      .dropdown-item:focus {
+        background-color: transparent !important;
+      }
+      .dropdown-item:hover {
+        background-color: transparent !important;
+      }
       @include sm {
         width: 190px;
       }
@@ -115,15 +125,22 @@
         display: flex !important;
         align-items: center !important;
         justify-content: space-evenly !important;
+
         .signIn__btn {
           letter-spacing: $letter-spacing;
           font-family: $font-family;
           padding: 10px 20px;
           border: none;
           font-weight: 600;
-          background: #407ed2;
-          color: white;
+          background: $primaryColor;
+          color: $secondaryColor;
           text-transform: uppercase;
+          // &:hover {
+          //   border: 1px solid $primaryColor;
+          //   background-color: transparent;
+          //   color: $primaryColor;
+          //   padding: 9px 20px;
+          // }
           @include sm {
             padding: 5px 8px;
           }
@@ -134,12 +151,18 @@
         .register__btn {
           letter-spacing: $letter-spacing;
           font-family: $font-family;
-          padding: 10px 20px;
-          border: none;
+          padding: 9px 20px;
+          border: 1px solid $primaryColor;
           font-weight: 600;
-          background-color: white;
-          color: #407ed2;
+          background-color: transparent;
+          color: $primaryColor;
           text-transform: uppercase;
+          // &:hover{
+          //   background: $primaryColor;
+          //   color: $secondaryColor;
+          //   border: none;
+          //   padding: 10px 20px;
+          // }
           @include sm {
             padding: 5px 8px;
             margin-left: 5px;
