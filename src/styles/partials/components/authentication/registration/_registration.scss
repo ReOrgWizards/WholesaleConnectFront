@@ -1,4 +1,4 @@
-.login__content {
+.registration__contant {
   form {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     padding: 4rem 3rem;
@@ -12,7 +12,7 @@
     @include lg {
       width: 100%;
     }
-    .label__input__wrapper {
+    .reg__lbl__input {
       margin-bottom: 2rem;
       @include sm {
         margin-bottom: 1rem;
@@ -28,6 +28,39 @@
           font-size: 14px;
         }
       }
+      .number__dropdown{
+        span{
+          background-color: transparent !important;
+          border-color:$offWhiteColor;
+          select{
+            padding:0px 2rem 0 1.5rem !important;
+            border:none;
+            @include sm{
+              padding:0px 2rem 0 0.2rem !important;
+            }
+          }
+        }
+
+      }
+      select {
+        padding: 12px;
+        border-color: $offWhiteColor;
+        color: $offWhiteColor;
+        @include sm {
+          padding: 6px;
+          font-size: $normalFont;
+        }
+        &:focus {
+          box-shadow: none !important;
+          border-color: $offWhiteColor !important;
+          option {
+            color: $offWhiteColor;
+            @include sm {
+              padding: 6px;
+            }
+          }
+        }
+      }
       input {
         padding: 12px;
         border-color: $offWhiteColor;
@@ -37,8 +70,9 @@
         &::placeholder {
           color: $offWhiteColor;
           font-family: $font-family;
-          @include sm {
-            font-size: 14px;
+          letter-spacing: $letter-spacing;
+          @include sm{
+            font-size:$normalFont;
           }
         }
         &:focus {
@@ -47,23 +81,35 @@
         }
       }
     }
- 
-
-    a {
-      text-decoration: none;
-      color: $tertiaryColor;
-      p {
-        font-family: $font-family;
-        letter-spacing: $letter-spacing;
-        font-weight: $bold;
-        font-size: 14px;
-        @include sm {
-          font-size: 12px;
-        }
+    .pass__word__criteria {
+      font-size: $primaryFont;
+      color: $offWhiteColor;
+      font-family: $font-family;
+      letter-spacing: $letter-spacing;
+      @include sm {
+        font-size: $normalFont;
       }
     }
-    .login__btn {
+    .reg__agree {
+      font-size: $primaryFont;
+      color: $offWhiteColor;
+      font-family: $font-family;
+      letter-spacing: $letter-spacing;
+      @include sm {
+        font-size: $normalFont;
+      }
+      a {
+        text-decoration: none;
+        color: $tertiaryColor;
+        font-weight: $bold;
+      }
+    }
+    .registration__btn {
       text-align: center;
+      margin: 18px 0 0;
+      @include sm {
+        margin: 6px 0 0;
+      }
       button {
         padding: 0.5rem 3.5rem;
         color: $primaryColor;
@@ -90,4 +136,3 @@
     }
   }
 }
-
