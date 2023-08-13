@@ -1,0 +1,176 @@
+@import "../../components/carousel/_carousel-dir";
+
+.product__details {
+  margin: 40px 0 0;
+  .carousel-item {
+    .review__img {
+      height: 420px;
+      object-fit: cover;
+    }
+  }
+  .product__model__dtl {
+    margin: $spacing-16 0;
+    h6 {
+      font-size: $normalFont;
+      font-weight: $bold;
+      color: $offWhiteColor;
+      font-family: $font-family;
+      letter-spacing: $letter-spacing;
+    }
+    h4 {
+      font-size: $secondaryFont;
+      font-weight: $bold;
+      color: $tertiaryColor;
+      font-family: $font-family;
+      letter-spacing: $letter-spacing;
+      margin: $spacing-16 0;
+    }
+    p {
+      font-size: $primaryFont;
+      color: $offWhiteColor;
+      font-family: $font-family;
+      letter-spacing: $letter-spacing;
+    }
+    .product__size {
+      padding: $spacing-8 0;
+      width: 300px;
+      select {
+        padding: $spacing-8;
+        border-color: $offWhiteColor;
+        color: $offWhiteColor;
+        &:focus {
+          box-shadow: none !important;
+          border-color: $offWhiteColor !important;
+        }
+      }
+    }
+    .quantity__select {
+      display: flex;
+      padding: $spacing-8 0;
+      p {
+        padding-top: $spacing-4;
+        color: $tertiaryColor;
+        font-size: $primaryFont;
+        margin-right: 22px;
+        span {
+          font-size: $secondaryFont;
+          font-weight: $bold;
+        }
+      }
+    }
+    .addto__cart__btn {
+      padding: 0.5rem 3.5rem;
+      color: $primaryColor;
+      background: transparent;
+      border: 1.5px solid $primaryColor;
+      font-size: 16px;
+      font-family: $font-family;
+      letter-spacing: $letter-spacing;
+      cursor: pointer;
+      font-weight: $bold;
+      display: inline-block;
+      @include sm {
+        padding: 0.3rem 2rem;
+        font-size: 14px;
+      }
+      &:hover {
+        background: $primaryColor;
+        border: none;
+        color: $secondaryColor;
+      }
+    }
+  }
+}
+.related__product {
+  display: flex;
+}
+.description__review__section {
+  padding-top: $spacing-32;
+  ul {
+    display: inline-flex;
+    padding: 0px;
+    li {
+      list-style: none;
+      margin-right: $spacing-32;
+      font-size: $secondaryFont;
+      color: $primaryColor;
+      font-weight: $bold;
+      font-family: $font-family;
+      letter-spacing: $letter-spacing;
+    }
+  }
+  .review__add {
+    padding-top: $spacing-16;
+    display: flex;
+    justify-content: space-between;
+    .rating {
+      h6 {
+        font-family: $font-family;
+        font-size: $secondaryFont;
+        font-weight: $bold;
+        color: $tertiaryColor;
+        margin-bottom: 0rem;
+        padding-left: 4px;
+      }
+      p {
+        font-family: $font-family;
+        font-size: $primaryFont;
+        letter-spacing: $letter-spacing;
+        color: $tertiaryColor;
+      }
+    }
+  }
+  .review__description {
+    padding: $spacing-16 0;
+    h5 {
+      font-size: $primaryFont;
+      color: $tertiaryFont;
+      font-family: $font-family;
+      font-weight: $bold;
+      letter-spacing: $letter-spacing;
+      padding-bottom: $spacing-16;
+    }
+    hr {
+      color: $offWhiteColor;
+    }
+    h6 {
+      color: $offWhiteColor;
+      font-family: $font-family;
+      letter-spacing: $letter-spacing;
+      font-size: $normalFont;
+      font-weight: $bold;
+    }
+    p {
+      font-family: $font-family;
+      letter-spacing: $letter-spacing;
+      color: $tertiaryColor;
+      font-size: $primaryFont;
+    }
+    .review__more__less__view {
+      text-align: center;
+      padding-top: $spacing-16;
+      button {
+        text-align: center;
+        padding: 0.5rem 3.5rem;
+        color: $primaryColor;
+        background: transparent;
+        border: 1.5px solid $primaryColor;
+        font-size: 16px;
+        font-family: $font-family;
+        letter-spacing: $letter-spacing;
+        cursor: pointer;
+        font-weight: $bold;
+        display: inline-block;
+        @include sm {
+          padding: 0.3rem 2rem;
+          font-size: 14px;
+        }
+        &:hover {
+          background: $primaryColor;
+          border: none;
+          color: $secondaryColor;
+        }
+      }
+    }
+  }
+}
