@@ -1,0 +1,138 @@
+.registration__contant {
+  form {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 4rem 3rem;
+    margin: $spacing-32 auto;
+    width: 60%;
+    @include sm {
+      margin: $spacing-16 auto;
+      width: 100%;
+      padding: 1.5rem;
+    }
+    @include lg {
+      width: 100%;
+    }
+    .reg__lbl__input {
+      margin-bottom: 2rem;
+      @include sm {
+        margin-bottom: 1rem;
+      }
+      label {
+        font-family: $font-family;
+        letter-spacing: $letter-spacing;
+        font-weight: $bold;
+        margin-bottom: $spacing-12;
+        font-size: 16px;
+        color: $tertiaryColor;
+        @include sm {
+          font-size: 14px;
+        }
+      }
+      .number__dropdown{
+        span{
+          background-color: transparent !important;
+          border-color:$offWhiteColor;
+          select{
+            padding:0px 2rem 0 1.5rem !important;
+            border:none;
+            @include sm{
+              padding:0px 2rem 0 0.2rem !important;
+            }
+          }
+        }
+
+      }
+      select {
+        padding: 12px;
+        border-color: $offWhiteColor;
+        color: $offWhiteColor;
+        @include sm {
+          padding: 6px;
+          font-size: $normalFont;
+        }
+        &:focus {
+          box-shadow: none !important;
+          border-color: $offWhiteColor !important;
+          option {
+            color: $offWhiteColor;
+            @include sm {
+              padding: 6px;
+            }
+          }
+        }
+      }
+      input {
+        padding: 12px;
+        border-color: $offWhiteColor;
+        @include sm {
+          padding: 6px;
+        }
+        &::placeholder {
+          color: $offWhiteColor;
+          font-family: $font-family;
+          letter-spacing: $letter-spacing;
+          @include sm{
+            font-size:$normalFont;
+          }
+        }
+        &:focus {
+          box-shadow: none !important;
+          border-color: $offWhiteColor !important;
+        }
+      }
+    }
+    .pass__word__criteria {
+      font-size: $primaryFont;
+      color: $offWhiteColor;
+      font-family: $font-family;
+      letter-spacing: $letter-spacing;
+      @include sm {
+        font-size: $normalFont;
+      }
+    }
+    .reg__agree {
+      font-size: $primaryFont;
+      color: $offWhiteColor;
+      font-family: $font-family;
+      letter-spacing: $letter-spacing;
+      @include sm {
+        font-size: $normalFont;
+      }
+      a {
+        text-decoration: none;
+        color: $tertiaryColor;
+        font-weight: $bold;
+      }
+    }
+    .registration__btn {
+      text-align: center;
+      margin: 18px 0 0;
+      @include sm {
+        margin: 6px 0 0;
+      }
+      button {
+        padding: 0.5rem 3.5rem;
+        color: $primaryColor;
+        background: transparent;
+        border: 1.5px solid $primaryColor;
+        font-size: 16px;
+        font-family: $font-family;
+        letter-spacing: $letter-spacing;
+        cursor: pointer;
+        font-weight: $bold;
+        display: inline-block;
+        transition: all 0.3s ease-in;
+        @include sm {
+          padding: 0.3rem 2rem;
+          font-size: 14px;
+        }
+        &:hover {
+          background: $primaryColor;
+          border: none;
+          color: $secondaryColor;
+          transform: scaleX(1.1);
+        }
+      }
+    }
+  }
+}

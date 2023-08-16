@@ -1,14 +1,15 @@
 import "./App.scss";
 import WCFooter from "./components/footer/footer";
-import WCNavBarSection from "./layouts/navbar/navBar";
-import WCLandingPage from "./pages/landingpage/landingPage";
+import WCNavBarSection from "./layouts/navBar/navBar";
+import WCAuthLoginRegistration from "./layouts/authentication/authLoginRegistration";
 
 function App() {
   return (
     <>
       <WCNavBarSection />
-      <WCLandingPage />
-      <WCFooter/>
+      {/* <WCLandingPage /> */}
+      <WCAuthLoginRegistration />
+      <WCFooter />
     </>
   );
 }
