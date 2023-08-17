@@ -1,5 +1,7 @@
 // Categorycont data
 
+import { books } from "../assets/Images";
+
 export const categoryArr = [
   {
     id: 1,
@@ -169,5 +171,32 @@ export const navCategories = [
     ],
     brand:
       "https://www.virginmegastore.qa/medias/Merchant-Ambassador-logo.webp?context=bWFzdGVyfHJvb3R8MzI1OHxhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW18aGYwL2hhYS8xMDI5OTcyNjUyODU0Mi9NZXJjaGFudC1BbWJhc3NhZG9yLWxvZ28ud2VicHw1Y2QxMWVlNmU3YmFiODBjYThiOWZlZDI4NWMyYjMxODY5NDdjZTM4N2NkMGQwMmZkNjdlYmUxMDM5NGQ5Mjdm",
+  },
+];
+
+export const blogData = [
+  {
+    id: 1,
+    title: "Blog One",
+    img: books,
+    description: "Chakra : Wheels of life.",
+  },
+  {
+    id: 2,
+    title: "Blog Two",
+    img: books,
+    description: "Chakra : Wheels of life. Seven chakra has been",
+  },
+  {
+    id: 3,
+    title: "Blog Three",
+    img: books,
+    description: "Chakra : Wheels of life.",
+  },
+  {
+    id: 4,
+    title: "Blog Four",
+    img: books,
+    description: "Chakra : Wheels of life.",
   },
 ];
