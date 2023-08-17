@@ -26,7 +26,7 @@
       cursor: pointer;
       font-weight: $bold;
       display: inline-block;
-      transition: all 0.3s ease-in;
+      transition: all 0.2s ease-in;
       @include sm {
         padding: 0.3rem 2rem;
         font-size: $normalFont;
@@ -38,9 +38,8 @@
       }
       &:hover {
         background: $primaryColor;
-        border: none;
+        border-color: $primaryColor;
         color: $secondaryColor;
-        transform: scaleX(1.1);
       }
     }
   }
