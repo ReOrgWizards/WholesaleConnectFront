@@ -37,8 +37,6 @@ export const categoryArr = [
     brand_img:
       "https://www.virginmegastore.qa/medias/Sonos-logo.webp?context=bWFzdGVyfHJvb3R8MzIzNHxhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW18aDlmL2gzNi8xMDI5OTcyODk1MzM3NC9Tb25vcy1sb2dvLndlYnB8MzgxMzhmMGQxMDRiYTlkZGI4N2Y3NTJhM2MxM2IxMjMyZDE1YThhNmQxYWU4NDliZWU3ZTE4OGExMjFjNjY3Yw",
     brand_name: "unsplace2",
-    title: "Water",
-    description: "this is water",
     price: "1290/-",
     bannerimg:
       "https://images.unsplash.com/photo-1541574823565-f1d660886187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZWxlY3Ryb25pY2dhZ2V0JTIwJTIwc2hvcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
@@ -53,8 +51,6 @@ export const categoryArr = [
     brand_img:
       "https://www.virginmegastore.qa/medias/Mountain-logo.webp?context=bWFzdGVyfHJvb3R8Mzk1NHxhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW18aDI0L2gwYS8xMDI5OTczMTI3OTkwMi9Nb3VudGFpbi1sb2dvLndlYnB8MzBmYWVmYjEwMTY1Y2Y2MGI5N2U3NGQ0NGJhYjBmOWI1NGUxNTAyYTVjZjhjMWQ3NTZlODI1NjNiYjJmYjhiOQ",
     brand_name: "unsplace1",
-    title: "Water",
-    description: "this is water",
     price: "12990/-",
     bannerimg:
       "https://images.unsplash.com/photo-1541574823565-f1d660886187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZWxlY3Ryb25pY2dhZ2V0JTIwJTIwc2hvcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
