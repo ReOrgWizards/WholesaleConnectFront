@@ -12,7 +12,22 @@ import {
   FacebookOutlined,
   LinkedIn,
   HomeWork,
+  Star,
+  Add, Remove
 } from "@mui/icons-material";
+
+export const AddIcon = () => {
+  return < Add />;
+};
+
+export const RemoveIcon = () => {
+  return < Remove />;
+};
+
+
+export const StarIcon = () => {
+  return <Star />;
+};
 
 export const HomeWorkIcon = () => {
   return <HomeWork />;

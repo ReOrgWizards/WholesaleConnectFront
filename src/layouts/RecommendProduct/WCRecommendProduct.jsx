@@ -3,12 +3,12 @@ import WCSliderProvider from "../../components/slider/sliderProvider";
 import WCProductCard from "../../components/cards/productCard/productCard";
 import WCTitle from "../../components/TItle/TItle";
 
-const WCProductDetailsSection = ({ categoryArr }) => {
+const WCRecommendProduct = ({ categoryArr }) => {
   return (
     <>
-      <WCTitle title="Product Section" />
+      <WCTitle title="Recommend Product" />
       <WCSliderProvider>
-        {categoryArr.map((category, id) => (
+        {categoryArr?.map((category, id) => (
           <WCProductCard
             key={id}
             title={category.title}
@@ -22,8 +22,8 @@ const WCProductDetailsSection = ({ categoryArr }) => {
   );
 };
 
-WCProductDetailsSection.propTypes = {
-  categoryArr: PropTypes.array.isRequired,
+WCRecommendProduct.propTypes = {
+  categoryArr: PropTypes.array,
 };
 
-export default WCProductDetailsSection;
+export default WCRecommendProduct;
