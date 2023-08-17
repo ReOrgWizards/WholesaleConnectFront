@@ -1,20 +1,39 @@
 @import "../../abstracts/_abstract-dir";
 
 .title__container {
+  font-family: $font-family;
+  letter-spacing: $letter-spacing;
   text-align: $center;
   text-transform: uppercase;
   padding: $spacing-32 0px;
+  @include sm{
+    padding: $spacing-12 0px;
+  }
+  @include md{
+    padding: $spacing-16 0px;
+
+  }
+  @include lg{
+    padding: $spacing-16 0px;
+
+  }
   p {
     font-size: $secondaryFont;
     font-weight: 600;
     @include sm {
       font-size: $normalFont;
-      font-weight: 500;
+      font-weight: 600;
     }
-    @include md;
-    @include lg {
+    @include md{
       font-size: $primaryFont;
-      font-weight: 500;
+      font-weight: 600;
+    }
+    @include lg {
+      font-size: $secondaryFont;
+      font-weight: 600;
+    }
+    @include xlg{
+      font-weight: 600;
     }
   }
 }
