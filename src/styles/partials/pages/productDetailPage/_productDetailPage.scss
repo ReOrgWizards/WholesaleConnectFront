@@ -10,6 +10,9 @@
   }
   .product__model__dtl {
     margin: $spacing-16 0;
+    @include sm {
+      text-align: center;
+    }
     h6 {
       font-size: $normalFont;
       font-weight: $bold;
@@ -30,23 +33,21 @@
       color: $offWhiteColor;
       font-family: $font-family;
       letter-spacing: $letter-spacing;
-    }
-    .product__size {
-      padding: $spacing-8 0;
-      width: 300px;
-      select {
-        padding: $spacing-8;
-        border-color: $offWhiteColor;
-        color: $offWhiteColor;
-        &:focus {
-          box-shadow: none !important;
-          border-color: $offWhiteColor !important;
-        }
+      @include md{
+        text-align: justify;
+      }
+      @include sm{
+        text-align: justify;
       }
     }
-    .quantity__select {
-      display: flex;
-      padding: $spacing-8 0;
+    .price__section {
+      margin: $spacing-8 0 $spacing-16;
+      @include sm {
+        text-align: center !important;
+      }
+      @include md {
+        text-align: center !important;
+      }
       p {
         padding-top: $spacing-4;
         color: $tertiaryColor;
@@ -58,25 +59,30 @@
         }
       }
     }
-    .addto__cart__btn {
-      padding: 0.5rem 3.5rem;
-      color: $primaryColor;
-      background: transparent;
-      border: 1.5px solid $primaryColor;
-      font-size: 16px;
-      font-family: $font-family;
-      letter-spacing: $letter-spacing;
-      cursor: pointer;
-      font-weight: $bold;
-      display: inline-block;
-      @include sm {
-        padding: 0.3rem 2rem;
-        font-size: 14px;
+    .chat__btn__wrapper{
+      @include md{
+        text-align: center;
       }
-      &:hover {
-        background: $primaryColor;
-        border: none;
-        color: $secondaryColor;
+      .chat__btn {
+        padding: 0.5rem 3.5rem;
+        color: $primaryColor;
+        background: transparent;
+        border: 1.5px solid $primaryColor;
+        font-size: 16px;
+        font-family: $font-family;
+        letter-spacing: $letter-spacing;
+        cursor: pointer;
+        font-weight: $bold;
+        display: inline-block;
+        @include sm {
+          padding: 0.3rem 2rem;
+          font-size: 14px;
+        }
+        &:hover {
+          background: $primaryColor;
+          border: none;
+          color: $secondaryColor;
+        }
       }
     }
   }
@@ -86,6 +92,7 @@
 }
 .description__review__section {
   padding-top: $spacing-32;
+  cursor: pointer;
   ul {
     display: inline-flex;
     padding: 0px;
@@ -97,6 +104,10 @@
       font-weight: $bold;
       font-family: $font-family;
       letter-spacing: $letter-spacing;
+    }
+    .product__detail__description__list,
+    .product__detail__review__list {
+      border-bottom: 2px solid $primaryColor;
     }
   }
   .review__add {
