@@ -1,0 +1,64 @@
+.category__detail__wrapper {
+  margin-top: 1rem;
+  .category__description {
+    text-align: center;
+    p {
+      font-family: $font-family;
+      letter-spacing: $letter-spacing;
+      font-size: $primaryFont;
+      text-align: justify;
+      @include sm {
+        font-size: $normalFont;
+      }
+      @include md {
+        font-size: $normalFont;
+      }
+    }
+    button {
+      margin: 20px 0 45px;
+      padding: 0.5rem 3.5rem;
+      color: $tertiaryColor;
+      background: transparent;
+      border: 1.5px solid $tertiaryColor;
+      font-size: 16px;
+      font-family: $font-family;
+      letter-spacing: $letter-spacing;
+      cursor: pointer;
+      font-weight: $bold;
+      display: inline-block;
+      transition: all 0.2s ease-in;
+      @include sm {
+        padding: 0.3rem 2rem;
+        font-size: $normalFont;
+        margin: 10px 0 30px;
+      }
+      @include md {
+        font-size: $normalFont;
+        margin: 10px 0 30px;
+      }
+      &:hover {
+        background: $primaryColor;
+        border-color: $primaryColor;
+        color: $secondaryColor;
+      }
+    }
+  }
+  .clicked__category__images {
+    margin-bottom: 3.5rem;
+    @include sm {
+      margin-bottom: 1.5rem;
+    }
+    @include md {
+      margin-bottom: 1.5rem;
+    }
+    img {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+      @include sm{
+        height: 250px;
+      
+      }
+    }
+  }
+}
