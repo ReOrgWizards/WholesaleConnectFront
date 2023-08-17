@@ -6,7 +6,7 @@ import WCTitle from "../../components/TItle/TItle";
 const WCCategorySection = ({ categoryArr }) => {
   return (
     <>
-      <WCTitle title="Category Section" />
+      <WCTitle title="Trendy Category" />
       <WCSliderProvider>
         {categoryArr.map((category, id) => (
           // eslint-disable-next-line react/jsx-key
