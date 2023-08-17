@@ -8,7 +8,7 @@ const WCProductCard = ({ image, title, description, price }) => {
       <div className="product__card__container">
         <div className="card border-0">
           <div className="product__card__img__container">
-            <img src={image} alt="product" />
+            <img src={image} alt={title} />
           </div>
           <div className="card-body card__dby__content">
             <p className="product__title">{title}</p>
@@ -16,7 +16,7 @@ const WCProductCard = ({ image, title, description, price }) => {
             <ul>
               <li>
                 <p className="product__price">
-                  Rs. <span>1200/-</span>
+                  Rs. <span>{price}</span>
                 </p>
               </li>
               <li>
