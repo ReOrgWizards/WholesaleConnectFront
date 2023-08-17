@@ -1,0 +1,187 @@
+@import "../../components/carousel/_carousel-dir";
+
+.product__details {
+  margin: 40px 0 0;
+  .carousel-item {
+    .review__img {
+      height: 420px;
+      object-fit: cover;
+    }
+  }
+  .product__model__dtl {
+    margin: $spacing-16 0;
+    @include sm {
+      text-align: center;
+    }
+    h6 {
+      font-size: $normalFont;
+      font-weight: $bold;
+      color: $offWhiteColor;
+      font-family: $font-family;
+      letter-spacing: $letter-spacing;
+    }
+    h4 {
+      font-size: $secondaryFont;
+      font-weight: $bold;
+      color: $tertiaryColor;
+      font-family: $font-family;
+      letter-spacing: $letter-spacing;
+      margin: $spacing-16 0;
+    }
+    p {
+      font-size: $primaryFont;
+      color: $offWhiteColor;
+      font-family: $font-family;
+      letter-spacing: $letter-spacing;
+      @include md{
+        text-align: justify;
+      }
+      @include sm{
+        text-align: justify;
+      }
+    }
+    .price__section {
+      margin: $spacing-8 0 $spacing-16;
+      @include sm {
+        text-align: center !important;
+      }
+      @include md {
+        text-align: center !important;
+      }
+      p {
+        padding-top: $spacing-4;
+        color: $tertiaryColor;
+        font-size: $primaryFont;
+        margin-right: 22px;
+        span {
+          font-size: $secondaryFont;
+          font-weight: $bold;
+        }
+      }
+    }
+    .chat__btn__wrapper{
+      @include md{
+        text-align: center;
+      }
+      .chat__btn {
+        padding: 0.5rem 3.5rem;
+        color: $primaryColor;
+        background: transparent;
+        border: 1.5px solid $primaryColor;
+        font-size: 16px;
+        font-family: $font-family;
+        letter-spacing: $letter-spacing;
+        cursor: pointer;
+        font-weight: $bold;
+        display: inline-block;
+        @include sm {
+          padding: 0.3rem 2rem;
+          font-size: 14px;
+        }
+        &:hover {
+          background: $primaryColor;
+          border: none;
+          color: $secondaryColor;
+        }
+      }
+    }
+  }
+}
+.related__product {
+  display: flex;
+}
+.description__review__section {
+  padding-top: $spacing-32;
+  cursor: pointer;
+  ul {
+    display: inline-flex;
+    padding: 0px;
+    li {
+      list-style: none;
+      margin-right: $spacing-32;
+      font-size: $secondaryFont;
+      color: $primaryColor;
+      font-weight: $bold;
+      font-family: $font-family;
+      letter-spacing: $letter-spacing;
+    }
+    .product__detail__description__list,
+    .product__detail__review__list {
+      border-bottom: 2px solid $primaryColor;
+    }
+  }
+  .review__add {
+    padding-top: $spacing-16;
+    display: flex;
+    justify-content: space-between;
+    .rating {
+      h6 {
+        font-family: $font-family;
+        font-size: $secondaryFont;
+        font-weight: $bold;
+        color: $tertiaryColor;
+        margin-bottom: 0rem;
+        padding-left: 4px;
+      }
+      p {
+        font-family: $font-family;
+        font-size: $primaryFont;
+        letter-spacing: $letter-spacing;
+        color: $tertiaryColor;
+      }
+    }
+  }
+  .review__description {
+    padding: $spacing-16 0;
+    h5 {
+      font-size: $primaryFont;
+      color: $tertiaryFont;
+      font-family: $font-family;
+      font-weight: $bold;
+      letter-spacing: $letter-spacing;
+      padding-bottom: $spacing-16;
+    }
+    hr {
+      color: $offWhiteColor;
+    }
+    h6 {
+      color: $offWhiteColor;
+      font-family: $font-family;
+      letter-spacing: $letter-spacing;
+      font-size: $normalFont;
+      font-weight: $bold;
+    }
+    p {
+      font-family: $font-family;
+      letter-spacing: $letter-spacing;
+      color: $tertiaryColor;
+      font-size: $primaryFont;
+    }
+    .review__more__less__view {
+      text-align: center;
+      padding-top: $spacing-16;
+      button {
+        text-align: center;
+        padding: 0.5rem 3.5rem;
+        color: $primaryColor;
+        background: transparent;
+        border: 1.5px solid $primaryColor;
+        font-size: 16px;
+        font-family: $font-family;
+        letter-spacing: $letter-spacing;
+        cursor: pointer;
+        font-weight: $bold;
+        display: inline-block;
+        @include sm {
+          padding: 0.3rem 2rem;
+          font-size: 14px;
+        }
+        &:hover {
+          background: $primaryColor;
+          border: none;
+          color: $secondaryColor;
+        }
+      }
+    }
+  }
+}

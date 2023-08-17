@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <WCNavBarSection />
-      <WCRoutes/>
+      <WCRoutes />
       <WCFooter />
     </>
   );
