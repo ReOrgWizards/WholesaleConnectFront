@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import WCLandingPage from "../pages/landingpage/landingzone";
+import WCLandingPage from "../pages/landingPage/landingzone";
 import WCCategoryDetailPage from "../pages/categoryDetailPage/categoryDetailPage";
 
 const WCRoutes = () => (
