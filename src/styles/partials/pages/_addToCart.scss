@@ -1,0 +1,61 @@
+@import "../../abstracts/_abstract-dir";
+.add__to__cart__container {
+  margin: 0px 0px 36px;
+}
+.cart__title__container {
+  background-color: $primaryColor;
+  color: $secondaryColor;
+}
+.table-responsive {
+  cursor: pointer;
+}
+.add__to__cart__img {
+}
+.add__to__cart__img img {
+  height: 50px;
+}
+.cart__name {
+  font-weight: 600;
+}
+.cart__quantity__container {
+  margin-top: $spacing-12;
+}
+.cart__quantity {
+  border-radius: 50%;
+  width: 26px;
+  color: $secondaryColor;
+  background-color: $primaryColor;
+  margin: 0px $spacing-4;
+  padding: 0px 0px 3px;
+  border: none;
+}
+.cart__icon__container {
+  cursor: pointer;
+}
+.edit__icon,
+.delete__icon {
+  color: $primaryColor;
+  margin-right: $spacing-12;
+  font-size: $spacing-16;
+}
+.edit__icon:hover {
+  color: green;
+}
+.delete__icon:hover {
+  color: red;
+}
+.cart__btn__container {
+  text-align: end;
+  margin-top: 16px;
+}
+.cart__btn__container button {
+  border: none;
+  background-color: $primaryColor;
+  padding: 6px $spacing-32;
+  color: $secondaryColor;
+  letter-spacing: 1px;
+  border-radius: $spacing-4;
+}
+.cart__btn__container button:hover {
+  background-color: #47dd7e;
+}
