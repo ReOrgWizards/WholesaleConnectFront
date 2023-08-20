@@ -1,20 +1,14 @@
 import "./App.scss";
-import WCCategoryCard from "./components/cards/categoryCard/categoryCard";
-import { books } from "./assets/Images";
-import WCTitle from "./components/TItle/TItle";
-import WCProductCard from "./components/cards/productCard/productCard";
+import WCFooter from "./components/footer/footer";
+import WCNavBarSection from "./layouts/navbar/navBar";
+import WCRoutes from "./routes/Routes";
 
 function App() {
   return (
     <>
-      <WCCategoryCard image={books} title="Books" />
-      <WCTitle title="Category Section" />
-      <WCProductCard
-        image={books}
-        title="Cards & Plays"
-        description="This is Card & Plays that every one must play."
-        price="1200 /-"
-      />
+      <WCNavBarSection />
+      <WCRoutes />
+      <WCFooter />
     </>
   );
 }

@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 
-const WCCategoryCard = (props) => (
+const WCCategoryCard = ({ image, title }) => (
   <div className="category__card__container">
     <div className="category__card__img__container">
-      <img src={props.image} alt="category" />
+      <img src={image} alt={title} />
     </div>
-    <p>{props.title}</p>
+    <p>{title}</p>
   </div>
 );
 

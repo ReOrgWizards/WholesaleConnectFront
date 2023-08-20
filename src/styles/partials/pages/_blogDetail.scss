@@ -1,0 +1,16 @@
+@import "../../abstracts/_abstract-dir";
+
+.blog__page__wrapper {
+  .blog__page__img__wrapper {
+    img {
+      height: 300px;
+      width: 100%;
+    }
+  }
+  .blog__page__content {
+    .blog__page__description {
+      margin-bottom: $spacing-16;
+      text-align: justify;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "./customizeAccordion";
+@import "./searchLeftSide";
+@import "./searchRightSide";
+@import "./smallScreenButtonNav";
+
+.product__detail__wrapper {
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 50px;
+}

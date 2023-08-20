@@ -1,30 +1,55 @@
-@import '../../../abstracts/_abstract-dir';
-
+@import "../../../abstracts/_abstract-dir";
 
 .category__card__container {
-    cursor: pointer;
+  cursor: pointer;
+  text-align: $center;
+  .category__card__img__container {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    img {
+      height: 220px;
+      width: 180px;
+      margin: $auto;
+      border-radius: $spacing-8;
+      font-size: $tertiaryFont;
+      @include sm {
+        width: 140px;
+        height: 160px;
+      }
+      @include md {
+        width: 170px;
+        height: 190px;
+      }
+      @include lg {
 
-    .category__card__img__container {
-        text-align: $center;
-        justify-content: $center;
-
-        img {
-            height: 200px;
-            width: 60%;
-            margin: $auto;
-            border-radius: $spacing-8;
-
-        }
+        width: 180px;
+        height: 200px;
+      }
     }
-
-    p {
-        margin-top: $spacing-8;
-        font-size: $primaryFont;
-        font-weight:$bold;
-
-        &:hover {
-            color: #407ED2;
-        }
+  }
+  p {
+    margin-top: $spacing-8;
+    font-size: $primaryFont;
+    font-weight: $bold;
+    font-family: $font-family;
+    @include sm {
+      font-size: $normalFont;
     }
+    @include md {
+      font-size: $normalFont;
+    }
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}
 
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  .category__card__img__container{
+    img {
+    height: 150px !important;
+    width:110px !important;
+  }
+}
 }

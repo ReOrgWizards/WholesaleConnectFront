@@ -1,0 +1,60 @@
+@import "../../../abstracts/_abstract-dir";
+
+.blog__card__wrapper {
+  cursor: pointer;
+  margin: 20px;
+  border-radius: $spacing-12;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  .blog__img__wrapper {
+    img {
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
+      @include sm {
+        height: 100px;
+      }
+      @include md {
+        height: 180px;
+      }
+      @include lg {
+        height: 200px;
+      }
+    }
+  }
+  .blog__content__wrapper {
+    padding: $spacing-8 $spacing-8 $spacing-8;
+    .blog__title {
+      font-size: $secondaryFont;
+      font-weight: $bold;
+      @include sm{
+        font-size: $normalFont;
+      }
+    }
+    .blog__description__wrapper {
+      font-size: $normalFont;
+      @include sm {
+        font-size: 8px;
+      }
+      .blog__description {
+      }
+      .blog__btn {
+        text-align: center;
+        margin: $spacing-8 $spacing-8 $spacing-4;
+        button {
+          border: none;
+          background-color: $primaryColor;
+          color: $secondaryColor;
+          padding: $spacing-4 $spacing-32;
+          border-radius: $spacing-8;
+          @include sm {
+            padding: $spacing-2 $spacing-16;
+          }
+          &:hover {
+            background-color: $offWhiteColor;
+          }
+        }
+      }
+    }
+  }
+}

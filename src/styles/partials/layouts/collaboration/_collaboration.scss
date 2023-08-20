@@ -1,0 +1,22 @@
+.collaboration__container{
+  .collaboration__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+    img {
+      height: 110px;
+      object-fit: cover;
+      padding: 0 10px;
+      @include sm {
+        height: 45px;
+      }
+      @include md {
+        height: 65px;
+      }
+      @include lg {
+        height: 80px;
+      }
+    }
+  }
+}
