@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const WCBlogCard = ({ data }) => {
   const { title, img, description } = data;
@@ -10,9 +11,11 @@ const WCBlogCard = ({ data }) => {
       <div className="blog__content__wrapper">
         <p className="blog__title">{title}</p>
         <div className="blog__description__wrapper">
-          <p className="blog__description">{description.substring(0,38)}..</p>
+          <p className="blog__description">{description.substring(0, 38)}..</p>
           <div className="blog__btn">
-            <button> Read</button>
+            <Link to="/blog-detail">
+              <button> Read</button>
+            </Link>
           </div>
         </div>
       </div>

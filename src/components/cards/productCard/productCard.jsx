@@ -7,7 +7,9 @@ const WCProductCard = ({ image, title, description, price }) => {
       <div className="product__card__container">
         <div className="card border-0">
           <div className="product__card__img__container">
+            <Link to="/product-detail">
             <img src={image} alt={title} />
+            </Link>
           </div>
           <div className="card-body card__dby__content">
             <p className="product__title">{title}</p>
@@ -19,14 +21,14 @@ const WCProductCard = ({ image, title, description, price }) => {
                 </p>
               </li>
               <li>
-                <Link
+                {/* <Link
                   to="https://web.whatsapp.com/"
                   target="_blank"
                   class="chat__btn"
                   rel="noopener"
-                >
+                > */}
                   <button className="btn btn-primary ">Chat</button>
-                </Link>
+                {/* </Link> */}
               </li>
             </ul>
           </div>

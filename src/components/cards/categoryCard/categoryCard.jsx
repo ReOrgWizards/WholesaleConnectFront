@@ -1,10 +1,12 @@
-import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const WCCategoryCard = ({ image, title }) => (
   <div className="category__card__container">
     <div className="category__card__img__container">
-      <img src={image} alt={title} />
+      <Link to="/category">
+        <img src={image} alt={title} />
+      </Link>
     </div>
     <p>{title}</p>
   </div>

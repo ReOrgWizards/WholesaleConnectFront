@@ -1,4 +1,3 @@
-import React from "react";
 import {
   InstagramIcon,
   TwitterIcon,
@@ -27,7 +26,7 @@ const WCFooter = () => {
       <hr />
       <div className="footer__menu__wrapper">
         <div className="footer__menu__header">
-          <h3>SHOPIFY NEPAL</h3>
+          <h3>Wholesale Connect</h3>
           <p>
             With decades of maintenance of way expertise,and experience 
             no one knows the rail like Loram.no one knows the rail like Loram.
@@ -37,16 +36,16 @@ const WCFooter = () => {
           <h3>PRODUCTS</h3>
           <ul>
             <li>
-              <a href="#">Laptops</a>
+              <a href="/category">Category Page</a>
             </li>
             <li>
-              <a href="#">Mobile Phone</a>
+              <a href="/blog-detail">Blog Page</a>
             </li>
             <li>
-              <a href="#">Dell Laptop</a>
+              <a href="/cart">Cart Page</a>
             </li>
             <li>
-              <a href="#">React & Laravel</a>
+              <a href="/login">Login & Register</a>
             </li>
           </ul>
         </div>
@@ -54,13 +53,13 @@ const WCFooter = () => {
           <h3 className="foot__links__heading">USEFUL LINKS</h3>
           <ul>
             <li>
-              <a href="#">Pricing list</a>
+              <a href="/about-us">About US</a>
             </li>
             <li>
-              <a href="#">All Products</a>
+              <a href="/product-detail">Product Detail</a>
             </li>
             <li>
-              <a href="#">Most orders</a>
+              <a href="/search">Search Page</a>
             </li>
             <li>
               <a href="#">Helps section</a>

@@ -5,6 +5,8 @@ import WCProductDetailsSection from "../pages/productDetailPage/productDetailPag
 import WCBlogPage from "../pages/blogDetail";
 import ProductSearchPage from "../pages/searchPage";
 import WCAddToCartPage from "../pages/addToCart";
+import WCAboutUs from "../pages/aboutUs";
+import WCAuthLoginRegistration from "../layouts/authentication/authLoginRegistration";
 
 const WCRoutes = () => (
   <Routes>
@@ -14,6 +16,8 @@ const WCRoutes = () => (
     <Route path="/blog-detail" element={<WCBlogPage />} />
     <Route path="/cart" element={<WCAddToCartPage />} />
     <Route path="/search" element={<ProductSearchPage />} />
+    <Route path="/about-us" element={<WCAboutUs />} />
+    <Route path="/login" element={<WCAuthLoginRegistration />} />
   </Routes>
 );
 
