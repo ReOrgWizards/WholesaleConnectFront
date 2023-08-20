@@ -1,0 +1,28 @@
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    padding: 10px;
+    z-index: 9999;
+  }
+  
+  #button1 {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #407ED2;
+    color: #FEFEFE;
+    font-weight: 600;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  @media only screen and  (min-width: 768px){
+    .button-container {
+      display: none;
+    }
+}
